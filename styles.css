@@ -1,4 +1,33 @@
+#fejlec{
+    width: 100%;
+    color: #06213F;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    font-weight: bold;
+    border-bottom: 40px solid #06213F;
+}
 
+
+#fejlec span{
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#fejlec img{
+    max-width: 100px;
+    box-shadow:5px 5px 10px 0px #444444;;
+}
+
+#cim{
+    font-size: 4rem;
+    text-align: center;
+    background-color: grey;
+    max-width: 1000px;
+    color:white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
 
 main{
     max-width: 1280px;
@@ -6,6 +35,20 @@ main{
     background-size: cover;
     text-align: center;
     color: white;
+    border-radius: 20px;
+}
+
+.nav{
+    max-width: 40px;
+    filter: brightness(0.8);
+}
+.nav:hover{
+    cursor: pointer;
+    filter: brightness(1.5);
+}
+
+#navi{
+    font-size: 1.2em;
 }
 
 #embed{
@@ -37,12 +80,16 @@ main{
 #map2{
     position: absolute;
     float: left;
-    top: 128px;
-    left: 88px;
+    top: 8px;
+    left: 9px;
 }
 
 #map2:hover{
-    filter: brightness(1.50);
+    cursor: pointer;
+    position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
 }
 
 #map3{
@@ -59,7 +106,18 @@ main{
 }
 
 .epu:hover{
-    filter: opacity(0.7);
+    filter: brightness(0.5);
+    cursor: pointer;
+}
+
+
+.selected{
+    filter: invert(90%)!important;
+}
+
+.selectedmap{
+    left: 9px!important;
+    top:8px!important;
 }
 
 /*Alrészek*/
@@ -106,4 +164,170 @@ main{
 #terasz{
     top: 253px;
     left: 623px;
+}
+
+/*Galléria*/
+
+#gallery{
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 20px;
+    margin: 5%;
+    margin-top: -3%;
+    margin-bottom: -80px;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+
+.handle{
+    display: inline;
+    padding-top:    90px;
+    padding-bottom: 90px;
+    padding-right:  10px;
+    padding-left:   10px;
+    position: relative;
+    top: -32.5px;
+    background-color: black;
+    cursor: pointer;
+}
+
+#galjobb{
+    left: 43%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#galbal{
+    right: 43%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#galnagy{
+    margin-bottom: 10%;
+}
+
+
+.kep{
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-height: 100px;
+    height: auto;
+    width: 200px;
+    display: inline-block;
+    float: none;
+    background-color: black;
+    border: 2px black solid;
+}
+
+.kep:hover{
+    cursor: pointer;
+    border: 4px rgba(200, 255, 0, 1);
+}
+
+
+.kep2{
+    position: absolute;
+    min-width: 1000px;
+    height: auto;
+    width:  90%;
+    display: inline-block;
+    float: none;
+    border: 2px black solid;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    left:50%;
+    top: 110%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 40px;
+}
+
+.kep2:hover{
+    cursor: pointer;
+}
+
+.galhid{
+    display: none;
+}
+
+#alap01{
+    background-image: url("gallery/alap/01.png");
+}
+#alap02{
+    background-image: url("gallery/alap/02.jpg");
+}
+#alap03{
+    background-image: url("gallery/alap/03.jpg");
+}
+#alap04{
+    background-image: url("gallery/alap/04.jpg");
+}
+#alap05{
+    background-image: url("gallery/alap/05.jpg");
+}
+#alap06{
+    background-image: url("gallery/alap/06.jpeg");
+}
+#alap07{
+    background-image: url("gallery/alap/07.jpg");
+}
+
+/*A épület képek*/
+#A01{
+    background-image: url("gallery/A/01.jpg");
+}
+#A02{
+    background-image: url("gallery/A/02.jpg");
+}
+#A03{
+    background-image: url("gallery/A/03.jpg");
+}
+
+/*A lépcső képek*/
+#Al01{
+    background-image: url("gallery/Al/01.jpg");
+}
+
+/*B épület képek*/
+#B01{
+    background-image: url("gallery/B/01.jpg");
+}
+#B02{
+    background-image: url("gallery/B/02.jpg");
+}
+#B03{
+    background-image: url("gallery/B/03.jpg");
+}
+
+
+/*C épület képek*/
+#C01{
+    background-image: url("gallery/C/01.jpg");
+}
+#C02{
+    background-image: url("gallery/C/02.jpg");
+}
+#C03{
+    background-image: url("gallery/C/03.jpg");
+}
+
+/*C lépcső képek*/
+#Cl01{
+    background-image: url("gallery/Cl/01.jpg");
+}
+#Cl02{
+    background-image: url("gallery/Cl/02.jpg");
+}
+
+/*Tornaterem képek*/
+#tterem01{
+    background-image: url("gallery/tterem/01.jpg");
+}
+#tterem02{
+    background-image: url("gallery/tterem/02.jpg");
 }
