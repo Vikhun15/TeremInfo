@@ -23,6 +23,13 @@ function galChange(that){
     if(!found){
         $("#alap", parent.document).removeClass("galhid")
     }
+    $(".kep", parent.document).animate({left: "0"}, 500)
+    if(($(".kep", parent.document).length - $(".galhid", parent.document).children(".kep").length) <= 4){
+        $(".handle", parent.document).hide();
+    }
+    else{
+        $(".handle", parent.document).css("display", "")
+    }
 }
 
 function iframeLoaded(){
@@ -50,7 +57,6 @@ function iframeLoaded(){
 
     $("#map2")
     .hover( function(){
-        $("#kiemelt", parent.document).text($(this).attr("alt"))
         $(this).attr("src", "map/sat/egressy_map_hover.png")
         $(this).css("left", "9px")
         $(this).css("top", "8px")
@@ -82,9 +88,6 @@ function iframeLoaded(){
         }
     })
     $(".epu")
-    .hover( function(){
-        $("#kiemelt", parent.document).text($(this).attr("alt"))
-    })
     .click(function(){
         if($("#map2").hasClass("selectedmap")){
             $("#map2").removeClass("selectedmap")
@@ -105,9 +108,6 @@ function iframeLoaded(){
         }
     })
     $("#map1")
-    .hover( function(){
-        $("#kiemelt", parent.document).text("Az iskola")
-    })
     .click(function(){
         galChange($(this))
         $(".selected").removeClass("selected")
@@ -119,6 +119,8 @@ function iframeLoaded(){
 
 
 function pageLoaded(){
+
+
 
     var pos = $(".kep").eq(0).position()["left"] - 210
     $("#galjobb").bind("click", function(){
