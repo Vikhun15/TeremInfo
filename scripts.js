@@ -112,7 +112,7 @@ function iframeLoaded(){
         galChange($(this))
         $(".selected").removeClass("selected")
         $(".selectedmap").removeClass("selectedmap")
-        $("# valasztott", parent.document).text("")
+        $("#kivalasztott", parent.document).text("")
     })
 
 }
