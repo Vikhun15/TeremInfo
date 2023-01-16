@@ -1,0 +1,16 @@
+termek = [
+    {
+        "terem":"B226",
+        "epulet":"B",
+        "projektor":true,
+        "orarend":"link",
+        "extra":"11.K osztályterme"
+    },
+    {
+        "terem":"C304",
+        "epulet":"C",
+        "projektor":false,
+        "orarend":"link",
+        "extra":"9.K osztályterme"
+    }
+]

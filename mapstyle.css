@@ -1,0 +1,630 @@
+
+/*Alrészek*/
+#tterem{
+    top: 408px;
+    left: 88px;
+}
+
+#A{
+    top: 138px;
+    left: 108px;
+}
+
+#Al{
+    top: 198px;
+    left: 258px;
+}
+
+#B{
+    top: 128px;
+    left: 303px;
+}
+
+#Bl{
+    top: 248px;
+    left: 445.8px;
+}
+
+#C{
+    top: 140px;
+    left: 702px;
+}
+
+#Cl{
+    top: 155px;
+    left: 642px;
+}
+
+#ebedlo{
+    top: 298px;
+    left: 418px;
+}
+
+#terasz{
+    top: 253px;
+    left: 623px;
+}
+
+#belso{
+    position: relative;
+}
+.belso{
+    position: absolute;
+    float: left;
+}
+
+.belso:hover{
+    filter: brightness(0.5);
+    cursor: pointer;
+}
+
+/*Harmadik emelet*/
+
+#Clem3{
+    top: 162px;
+    left: 623px;
+}
+
+#em3foly{
+    top: 140px;
+    left: 703px;
+}
+
+#C300{
+    top: 195px;
+    left: 623px;
+}
+
+
+
+#C301{
+    top: 245px;
+    left: 703px;
+}  
+#C302{
+    top: 295px;
+    left: 704px;
+
+}  
+#C303{
+    top: 323px;
+    left: 704px;
+
+}  
+#C304{
+    top: 323px;
+    left: 791px;
+
+}  
+#C305{
+    top: 296px;
+    left: 791px;
+
+}  
+#C306{
+    top: 245px;
+    left: 791px;
+
+}  
+#C307{
+    top: 216px;
+    left: 791px;
+
+}  
+#C308{
+    top: 139px;
+    left: 790px;
+
+} 
+#C3noi{
+    top: 175px;
+    left: 741px;
+
+}  
+#C3tanari{
+    top: 140px;
+    left: 744px;
+
+}
+#C3ffi{
+    top: 140px;
+    left: 725px;
+
+} 
+#C312{
+    top: 140px;
+    left: 704px;
+
+}
+
+/*Második emelet*/
+#em2a{
+    top: 140px;
+    left: 80px;
+}
+#em2a:hover{
+    filter: brightness(1);
+}
+#A204{
+    top: 394px;
+    left: 178px;
+}
+#A205{
+    top: 308px;
+    left: 178px;
+}
+#A206{
+    top: 238px;
+    left: 178px;
+}
+#A203{
+    top: 329px;
+    left: 80px;
+}
+#A202{
+    top: 236px;
+    left: 80px;
+}
+#A202-1{
+    top: 204px;
+    left: 112px;
+}
+#A201{
+    top: 146px;
+    left: 174px;
+}
+#em2foly1{
+    top: 178px;
+    left: 145px;
+}
+#Alem2{
+    top: 207px;
+    left: 245px;
+}
+#A2ffi{
+    top: 141px;
+    left: 305px;
+}
+#B207{
+    top: 235px;
+    left: 305px;
+}
+#B208{
+    top: 235px;
+    left: 338px;
+}
+#B209{
+    top: 235px;
+    left: 424px;
+}
+#B227{
+    top: 148px;
+    left: 338px;
+}
+#B226{
+    top: 151px;
+    left: 376px;
+}
+#B225{
+    top: 151px;
+    left: 446px;
+}
+#B224{
+    top: 148px;
+    left: 527px;
+}
+#B223{
+    top: 141px;
+    left: 602px;
+}
+#B210{
+    top: 235px;
+    left: 492px;
+}
+#B211{
+    top: 235px;
+    left: 536px;
+}
+#B212{
+    top: 245px;
+    left: 602px;
+}
+#Blem2{
+    top: 235px;
+    left: 450px;
+}
+#em2foly2{
+    top:198px;
+    left: 304px;
+}
+#Clem2{
+    top: 165px;
+    left: 636px;
+}
+#C222{
+    top: 140px;
+    left: 712px;
+}
+#C2ffi{
+    top: 140px;
+    left: 743px;
+}
+#C221{
+    top: 168px;
+    left: 743px;
+}
+#C219{
+    top: 142px;
+    left: 798px;
+}
+#C218{
+    top: 198px;
+    left: 798px;
+}
+#C217{
+    top: 256px;
+    left: 798px;
+}
+#C216{
+    top: 320px;
+    left: 775px;
+}
+#C214{
+    top: 320px;
+    left: 713px;
+}
+#C213{
+    top: 245px;
+    left: 713px;
+}
+#em2foly3{
+    top: 141px;
+    left: 713px;
+}
+
+/*Első emelet*/
+
+#em1a{
+    top: 140px;
+    left: 80px;
+}
+#em1a:hover{
+    filter: brightness(1);
+}
+#A105{
+    top: 384px;
+    left: 178px;
+}
+#A106{
+    top: 308px;
+    left: 178px;
+}
+#A107{
+    top: 238px;
+    left: 178px;
+}
+#A104{
+    top: 347px;
+    left: 80px;
+}
+#A103{
+    top: 276px;
+    left: 80px;
+}
+#A102{
+    top: 236px;
+    left: 80px;
+}
+#A102-1{
+    top: 199px;
+    left: 101px;
+}
+#A101{
+    top: 144px;
+    left: 174px;
+}
+#em1foly1{
+    top: 176px;
+    left: 145px;
+}
+#Alem1{
+    top: 200px;
+    left: 240px;
+}
+#B1tanari{
+    top: 141px;
+    left: 303px;
+}
+#B108{
+    top: 235px;
+    left: 303px;
+}
+#B108-1{
+    top: 235px;
+    left: 338px;
+}
+#B109-1{
+    top: 235px;
+    left: 381px;
+}
+#B109{
+    top: 235px;
+    left: 406px;
+}
+#B109-2{
+    top: 235px;
+    left: 429px;
+}
+#B125{
+    top: 141px;
+    left: 338px;
+}
+#B124{
+    top: 149px;
+    left: 452px;
+}
+#konyvt{
+    top: 141px;
+    left: 497px;
+}
+#B122{
+    top: 141px;
+    left: 602px;
+}
+#B110-1{
+    top: 235px;
+    left: 492px;
+}
+#B110{
+    top: 235px;
+    left: 515px;
+}
+#B110-2{
+    top: 234.5px;
+    left: 538px;
+}
+#B111{
+    top: 235px;
+    left: 562px;
+}
+#Blem1{
+    top: 234px;
+    left: 450px;
+}
+#em1foly2{
+    top:210px;
+    left: 304px;
+}
+#Clem1{
+    top: 145px;
+    left: 636px;
+}
+#C121{
+    top: 140px;
+    left: 712px;
+}
+#C1ffi{
+    top: 140px;
+    left: 743px;
+}
+#C1tanari{
+    top: 168px;
+    left: 743px;
+}
+#C118{
+    top: 142px;
+    left: 798px;
+}
+#C117{
+    top: 184px;
+    left: 798px;
+}
+#C116{
+    top: 256px;
+    left: 798px;
+}
+#C115{
+    top: 320px;
+    left: 799px;
+}
+#C114{
+    top: 345px;
+    left: 774px;
+}
+#C113{
+    top: 320px;
+    left: 711px;
+}
+#C112{
+    top: 246px;
+    left: 711px;
+}
+#em1foly3{
+    top: 141px;
+    left: 713px;
+}
+
+/*Földszint*/
+#fsza{
+    top: 128px;
+    left: 40px;
+}
+#fsza:hover{
+    filter: brightness(1);
+}
+#fszfoly1{
+    top: 237px;
+    left: 149px;
+}
+#fszfoly2{
+    top: 197px;
+    left: 305px;
+}
+#fszfoly3{
+    top: 140px;
+    left: 715px;
+}
+#A10{
+    top: 425px;
+    left: 40px;
+}
+#A4{
+    top: 362px;
+    left: 81px;
+}
+#A0ffi{
+    top: 390px;
+    left: 180px;
+}
+#A6{
+    top: 372px;
+    left: 180px;
+}
+#A7{
+    top: 322px;
+    left: 180px;
+}
+#A8{
+    top: 292px;
+    left: 180px;
+}
+#A9{
+    top: 237px;
+    left: 180px;
+}
+#A3{
+    top: 300px;
+    left: 81px;
+}
+#A2{
+    top: 237px;
+    left: 81px;
+}
+#Alfsz{
+    top: 203px;
+    left: 240px;
+}
+#porta{
+    top: 128px;
+    left: 95px;
+}
+#B0ffi{
+    top: 140px;
+    left: 303px;
+}
+#B11-1{
+    top: 234px;
+    left: 303px;
+}
+#B11{
+    top: 234px;
+    left: 337px;
+}
+#B12-1{
+    top: 234px;
+    left: 360px;
+}
+#B12{
+    top: 234px;
+    left: 384px;
+}
+#B30{
+    top: 141px;
+    left: 338px;
+}
+#B29{
+    top: 149px;
+    left: 422px;
+}
+#B28{
+    top: 149px;
+    left: 465px;
+}
+#B27{
+    top: 145px;
+    left: 545px;
+}
+#B26{
+    top: 140px;
+    left: 603px;
+}
+#B13{
+    top: 234px;
+    left: 491px;
+}
+#B14{
+    top: 234px;
+    left: 561px;
+}
+#B0noi{
+    top: 248px;
+    left: 603px;
+}
+#ebedloal{
+    top: 310px;
+    left: 383px;
+}
+#D3{
+    top: 451px;
+    left: 450px;
+}
+#konyha{
+    top: 395px;
+    left: 490px;
+}
+#bufe{
+    top: 355px;
+    left: 490px;
+}
+#Blfsz{
+    top: 232px;
+    left: 449px;
+}
+#Clfsz{
+    top: 140px;
+    left: 637px;
+}
+#teraszal{
+    top: 240px;
+    left: 635px;
+}
+#C25{
+    top: 140px;
+    left: 715px;
+}
+#C0tanari{
+    top: 169px;
+    left: 753px;
+}
+#rPorta{
+    top: 140px;
+    left: 753px;
+}
+#C22{
+    top: 140px;
+    left: 800px;
+}
+#C21{
+    top: 223px;
+    left: 800px;
+}
+#C20{
+    top: 245px;
+    left: 800px;
+}
+#C19{
+    top: 318px;
+    left: 800px;
+}
+#C18{
+    top: 350px;
+    left: 777px;
+}
+#C17{
+    top: 318px;
+    left: 715px;
+}
+#C16{
+    top: 245px;
+    left: 715px;
+}

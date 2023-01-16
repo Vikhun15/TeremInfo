@@ -11,6 +11,8 @@
                 pageLoaded()
             })
         </script>
+        <script src="epuletek.json"></script>
+        <script src="termek.json"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     </head>
     <body>
@@ -22,10 +24,10 @@
             <h1 id="cim" class="m-auto mt-3 p-3">Terem kereső</h1>
             </header>
         <main class="m-auto">
-            <h4 class="text-center pt-4">Egressy Gábor Technikum</h4><br>
-            <div class="row p-5">
-                <div class="col-lg-2 p-0 col-md-12 row">
-                    <div class="row col py-4" id="navi">
+            <h4 class="text-center pt-5">Egressy Gábor Technikum</h4><br>
+            <div class="row p-4 pt-1">
+                <div class="col-lg-3 p-0 col-md-12 row pt-3">
+                    <div class="row col-lg-12 col-md-6" id="navi">
                         <div class="col-8">
                             <br><p>Szint: <span id="szint" value="sat">Szatellit</span>
                         </div>
@@ -33,26 +35,26 @@
                             <img class="nav m-auto" id="fel"src="map/nav/felfele.png" value="Fel">
                             <img class="nav m-auto" id="le" src="map/nav/lefele.png"value="Le">
                         </div>
-                        <div class="col-12 row pt-5">
+                        <div id="kivcont" class="col-12 row">
                             <div class="col-lg-12 col-md-6">
-                                <p>Kiválasztott rész:</p>
+                                Kiválasztott rész:
                             </div>
-                            <div class="col-lg-12 col-md-6">
-                                <span id="kivalasztott"> </span>
+                            <div id="kivalasztott" class="col-lg-12 col-md-6">
+                                -
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent laoreet tincidunt tortor, quis dignissim lacus imperdiet eu. Praesent mollis aliquet justo non elementum. Morbi dignissim orci eget ullamcorper pretium. Etiam in massa laoreet, iaculis leo sit amet, blandit leo. Maecenas vitae leo in elit ullamcorper pharetra ac eget ligula. </p>
+                    <div id="info" class="col-lg-12 col-md-6">
+                    
                     </div>
                     <br>
                 </div>
-                <div class="col-lg-10 col-md-12 pt-4">
+                <div class="col-lg-9 col-md-12 pt-3">
                     <iframe src="map.html" type="text/html" id="mapframe" 
                     onload="resizeIframe(this)"></iframe>
                 </div>
             </div>
-            <div id="galnagy">
+            <div id="galnagy" class="pt-4">
                 <div id="gallery" class="p-5">
                     <div id="alap" class="galdiv">
                         <div class="kep mx-2" id="alap01"></div>

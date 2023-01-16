@@ -51,12 +51,24 @@ main{
     font-size: 1.2em;
 }
 
+#kivcont{
+    font-size: 1rem;
+}
+
 #embed{
     background-color: green;
     max-width: 100%;
     margin: auto;
 }
 
+#info{
+    text-align: left;
+    min-height: 300px;
+}
+
+#kivalasztott{
+    opacity: 0;
+}
 
 #mapframe{
     margin: auto;
@@ -120,51 +132,6 @@ main{
     top:8px!important;
 }
 
-/*Alrészek*/
-#tterem{
-    top: 408px;
-    left: 88px;
-}
-
-#A{
-    top: 138px;
-    left: 108px;
-}
-
-#Al{
-    top: 198px;
-    left: 258px;
-}
-
-#B{
-    top: 128px;
-    left: 303px;
-}
-
-#Bl{
-    top: 248px;
-    left: 445.8px;
-}
-
-#C{
-    top: 140px;
-    left: 702px;
-}
-
-#Cl{
-    top: 155px;
-    left: 642px;
-}
-
-#ebedlo{
-    top: 298px;
-    left: 418px;
-}
-
-#terasz{
-    top: 253px;
-    left: 623px;
-}
 
 /*Galléria*/
 
@@ -172,7 +139,7 @@ main{
     background-color: rgba(0,0,0,0.7);
     border-radius: 20px;
     margin: 5%;
-    margin-top: -3%;
+    margin-top: 0;
     margin-bottom: -80px;
     overflow-x: hidden;
     white-space: nowrap;

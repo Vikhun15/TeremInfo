@@ -4,6 +4,7 @@
         <title>Kezdőlap</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="mapstyle.css" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="scripts.js"></script>
         <script>
@@ -11,6 +12,8 @@
                 iframeLoaded()
             })
         </script>
+        <script src="epuletek.json"></script>
+        <script src="termek.json"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     </head>
     <body id="embed" class="m-auto">
@@ -28,6 +31,150 @@
                 <img class="epu" title="B lépcsősor" alt="B lépcsősor"  id="Bl"     src="map/epuletek/egressy_start_0000s_0005_B_lepcso.png" >
                 <img class="epu" title="C épület"    alt="C épület"     id="C"      src="map/epuletek/egressy_start_0000s_0007_C.png" >
                 <img class="epu" title="C lépcsősor" alt="C lépcsősor"  id="Cl"     src="map/epuletek/egressy_start_0000s_0008_C_lepcso.png" >
+            </div>
+            <div id="belso">
+                <div id="em3" style="display:none;">
+                    <img src="map/belso/belso/3em/em3_0001_Cl_em3.png"      id="Clem3"   alt="C lépcső em3"    class="belso em3 lepcso"    title="C lépcső">
+                    <img src="map/belso/belso/3em/em3_0014_folyosó.png"        id="em3foly"   alt="folyoso"          class="belso em3 folyoso"  title="harmadik emelet folyosó">
+                    <img src="map/belso/belso/3em/em3_0000_C300.png"        id="C300"   alt="C300"          class="belso em3 tanari"    title="C300 tanári">
+                    <img src="map/belso/belso/3em/em3_0013_C301.png"        id="C301"   alt="C301"          class="belso em3 terem"     title="C301">
+                    <img src="map/belso/belso/3em/em3_0012_C302.png"        id="C302"   alt="C302"          class="belso em3 tanari"    title="C302 tanári">
+                    <img src="map/belso/belso/3em/em3_0011_C303.png"        id="C303"   alt="C303"          class="belso em3 terem"     title="C303">
+                    <img src="map/belso/belso/3em/em3_0010_C304.png"        id="C304"   alt="C304"          class="belso em3 terem"     title="C304">
+                    <img src="map/belso/belso/3em/em3_0009_C305.png"        id="C305"   alt="C305"          class="belso em3 tanari"    title="C305 tanári">
+                    <img src="map/belso/belso/3em/em3_0008_C306.png"        id="C306"   alt="C306"          class="belso em3 tanari"    title="C306 tanári">
+                    <img src="map/belso/belso/3em/em3_0007_C307.png"        id="C307"   alt="C307"          class="belso em3 tanari"    title="C307 tanári">
+                    <img src="map/belso/belso/3em/em3_0006_C308.png"        id="C308"   alt="C308"          class="belso em3 terem"     title="C308">
+                    <img src="map/belso/belso/3em/em3_0005_noi_wc.png"      id="C3noi"   alt="C Női wc"      class="belso em3 noi wc"    title="Női wc">
+                    <img src="map/belso/belso/3em/em3_0004_tanari_wc.png"   id="C3tanari"alt="C tanári wc"   class="belso em3 tanari wc" title="Tanári wc">
+                    <img src="map/belso/belso/3em/em3_0003_ffi_wc.png"      id="C3ffi"   alt="C férfi wc"    class="belso em3 ffi wc"    title="Férfi wc">
+                    <img src="map/belso/belso/3em/em3_0002_C312.png"        id="C312"   alt="C312"          class="belso em3 konyvtar"  title="C312 könyvtár">
+                </div>
+                <div id="em2" style="display: none;">
+                    <img src="map/belso/belso/2em/em2_0034_em2.png"             id="em2a"       alt="Második emelet"    class="belso em2 alap"    title="Második emelet">
+                    <img src="map/belso/belso/2em/em2_0007_em1_folyosó_1.png"   id="em2foly1"   alt="Folyosó"    class="belso em2 folyoso"    title="A épület folyosó">
+                    <img src="map/belso/belso/2em/em2_0022_em2_folyosó_2.png"   id="em2foly2"   alt="Folyosó"    class="belso em2 folyoso"    title="B épület folyosó">
+                    <img src="map/belso/belso/2em/em2_0032_em2_folyosó_3.png"   id="em2foly3"   alt="Folyosó"    class="belso em2 folyoso"    title="C épület folyosó">
+                    <img src="map/belso/belso/2em/em2_0000_A204.png"            id="A204"       alt="A204"    class="belso em2 terem"    title="A204">
+                    <img src="map/belso/belso/2em/em2_0001_A205.png"            id="A205"       alt="A205"    class="belso em2 terem"    title="A205">
+                    <img src="map/belso/belso/2em/em2_0002_A206.png"            id="A206"       alt="A206"    class="belso em2 terem"    title="A206">
+                    <img src="map/belso/belso/2em/em2_0003_A203.png"            id="A203"       alt="A203"    class="belso em2 terem"    title="A203">
+                    <img src="map/belso/belso/2em/em2_0004_A202.png"            id="A202"       alt="A202"    class="belso em2 terem"    title="A202">
+                    <img src="map/belso/belso/2em/em2_0005_A202_1.png"          id="A202-1"     alt="A202.1"    class="belso em2 terem"    title="A202.1">
+                    <img src="map/belso/belso/2em/em2_0006_A201.png"            id="A201"       alt="A201"    class="belso em2 tanari"    title="A201 tanári">
+                    <img src="map/belso/belso/2em/em2_0008_Cl_em2.png"          id="Alem2"      alt="A lépcső em2"    class="belso em2 lepcso"    title="A lépcső">
+                    <img src="map/belso/belso/2em/em2_0009_ffi_wc_1.png"        id="A2ffi"      alt="Férfi wc A"    class="belso em2 ffi wc"    title="Férfi WC">
+                    <img src="map/belso/belso/2em/em2_0010_B207.png"            id="B207"       alt="B207"    class="belso em2 szertar"    title="B207">
+                    <img src="map/belso/belso/2em/em2_0011_B208.png"            id="B208"       alt="B208"    class="belso em2 labor"    title="B208 kémia labor">
+                    <img src="map/belso/belso/2em/em2_0012_B209.png"            id="B209"       alt="B209"    class="belso em2 tanari"    title="B209 tanári">
+                    <img src="map/belso/belso/2em/em2_0013_B227.png"            id="B227"      alt="B227"    class="belso em2 terem"    title="B227">
+                    <img src="map/belso/belso/2em/em2_0014_B226.png"            id="B226"      alt="B226"    class="belso em2 terem"    title="B226">
+                    <img src="map/belso/belso/2em/em2_0015_B225.png"            id="B225"       alt="B225"    class="belso em2 terem"    title="B225">
+                    <img src="map/belso/belso/2em/em2_0016_B224.png"            id="B224"       alt="B224"    class="belso em2 terem"    title="B224">
+                    <img src="map/belso/belso/2em/em2_0017_B223.png"            id="B223"       alt="B223"    class="belso em2 orvosi"    title="B223 orvosi szoba">
+                    <img src="map/belso/belso/2em/em2_0018_B210.png"            id="B210"      alt="B210"    class="belso em2 terem"    title="B210">
+                    <img src="map/belso/belso/2em/em2_0019_B211.png"            id="B211"      alt="B211"    class="belso em2 terem"    title="B211">
+                    <img src="map/belso/belso/2em/em2_0020_B212.png"            id="B212"       alt="B212"    class="belso em2 tanari"    title="B212 tanári">
+                    <img src="map/belso/belso/2em/em2_0021_Bl_em2.png"          id="Blem2"       alt="B lépcső em2"    class="belso em2 lepcso"    title="B lépcső">
+                    <img src="map/belso/belso/2em/em2_0023_Cl_em2.png"          id="Clem2"      alt="C lépcső em2"    class="belso em2 lepcso"    title="C lépcső">
+                    <img src="map/belso/belso/2em/em2_0024_C222.png"            id="C222"      alt="C222"    class="belso em2 tanari"    title="C222 tanári">
+                    <img src="map/belso/belso/2em/em2_0025_FFI_wc_2.png"        id="C2ffi"       alt="Férfi wc c"    class="belso em2 ffi wc"    title="Férfi WC">
+                    <img src="map/belso/belso/2em/em2_0026_C221.png"            id="C221"       alt="C221"    class="belso em2"    title="C221 marató">
+                    <img src="map/belso/belso/2em/em2_0027_C219.png"            id="C219"       alt="C219"    class="belso em2 terem"    title="C219">
+                    <img src="map/belso/belso/2em/em2_0028_C218.png"            id="C218"      alt="C218"    class="belso em2 terem"    title="C218">
+                    <img src="map/belso/belso/2em/em2_0029_C217.png"            id="C217"      alt="C217"    class="belso em2 terem"    title="C217">
+                    <img src="map/belso/belso/2em/em2_0030_C214.png"            id="C214"       alt="C214"    class="belso em2 terem"    title="C214">
+                    <img src="map/belso/belso/2em/em2_0031_C213.png"            id="C213"       alt="C213"    class="belso em2 terem"    title="C213">
+                    <img src="map/belso/belso/2em/em2_0033_C216.png"            id="C216"      alt="C216"    class="belso em2 terem"    title="C216 FESTO műhely">
+                </div>
+                <div id="em1" style="display: none;">
+                    <img src="map/belso/belso/1em/em1_0038_em1.png"             id="em1a"       alt="Első emelet"    class="belso em1 alap"    title="Első emelet">
+                    <img src="map/belso/belso/1em/em1_0009_em1_folyosó_1.png"   id="em1foly1"   alt="Folyosó"    class="belso em1 folyoso"    title="A épület folyosó">
+                    <img src="map/belso/belso/1em/em1_0025_em1_folyosó_2.png"   id="em1foly2"   alt="Folyosó"    class="belso em1 folyoso"    title="Adminisztrációs folyosó">
+                    <img src="map/belso/belso/1em/em1_0037_em1_folyosó_3.png"   id="em1foly3"       alt="Folyosó"    class="belso em1 folyoso"    title="C épület folyosó">
+                    <img src="map/belso/belso/1em/em1_0000_A104.png"            id="A104"       alt="A104"    class="belso em1 terem"    title="A104">
+                    <img src="map/belso/belso/1em/em1_0001_A103.png"            id="A103"       alt="A103"    class="belso em1 terem"    title="A103">
+                    <img src="map/belso/belso/1em/em1_0002_A102.png"            id="A102"       alt="A102"    class="belso em1 terem"    title="A102">
+                    <img src="map/belso/belso/1em/em1_0003_A102_1.png"          id="A102-1"       alt="A102.1"    class="belso em1 terem"    title="A102.1">
+                    <img src="map/belso/belso/1em/em1_0004_A101.png"            id="A101"     alt="A101"    class="belso em1 tanari"    title="A101 tanári">
+                    <img src="map/belso/belso/1em/em1_0005_A105.png"            id="A105"       alt="A105"    class="belso em1 terem"    title="A105">
+                    <img src="map/belso/belso/1em/em1_0006_A106.png"            id="A106"      alt="A106"    class="belso em1 terem"    title="A106">
+                    <img src="map/belso/belso/1em/em1_0007_A107.png"            id="A107"      alt="A107"    class="belso em1 terem"    title="A107">
+                    <img src="map/belso/belso/1em/em1_0008_Al_em1.png"          id="Alem1"       alt="A lépcső em1"    class="belso em1 lepcso"    title="A lépcső">
+                    <img src="map/belso/belso/1em/em1_0010_tanari_wc_1.png"     id="B1tanari"       alt="Btanari"    class="belso em1 tanari wc"    title="Tanári WC">
+                    <img src="map/belso/belso/1em/em1_0011_B108.png"            id="B108"       alt="B108"    class="belso em1 titkarsag"    title="B108 Titkárság">
+                    <img src="map/belso/belso/1em/em1_0012_B108_1.png"          id="B108-1"      alt="B108.1"    class="belso em1 tanari"    title="B108.1 Igazgató">
+                    <img src="map/belso/belso/1em/em1_0013_B125.png"            id="B125"      alt="B125"    class="belso em1 terem"    title="B125 Egressy terem">
+                    <img src="map/belso/belso/1em/em1_0014_B124.png"            id="B124"       alt="B124"    class="belso em1 tanari"    title="B124 tanári társalgó">
+                    <img src="map/belso/belso/1em/em1_0015_Könyvtár.png"        id="konyvt"       alt="Könyvtár"    class="belso em1 konyvtar"    title="Könyvtár">
+                    <img src="map/belso/belso/1em/em1_0016_B122.png"            id="B122"       alt="B122"    class="belso em1 szerver"    title="B122 szerver szoba">
+                    <img src="map/belso/belso/1em/em1_0017_B109_1.png"          id="B109-1"      alt="B109.1"    class="belso em1 tanari"    title="B109.1 Igazgató helyettesi iroda">
+                    <img src="map/belso/belso/1em/em1_0018_B109.png"            id="B109"      alt="B109"    class="belso em1 titkarsag"    title="B109 Tanulmányi iroda">
+                    <img src="map/belso/belso/1em/em1_0019_B109_2.png"          id="B109-2"       alt="B109.2"    class="belso em1 tanari"    title="B109.2 Igazgató helyettesi iroda">
+                    <img src="map/belso/belso/1em/em1_0020_Bl_em1.png"          id="Blem1"       alt="B lépcső em1"    class="belso em1 lepcso"    title="B lépcső">
+                    <img src="map/belso/belso/1em/em1_0026_Cl_em1.png"          id="Clem1"      alt="C lépcső em1"    class="belso em1 lepcso"    title="C lépcső" >
+                    <img src="map/belso/belso/1em/em1_0021_B110_1.png"          id="B110-1"       alt="B110.1"    class="belso em1 tanari"    title="B110.1 Műszaki igazgató helyettesi iroda">
+                    <img src="map/belso/belso/1em/em1_0022_B110.png"            id="B110"      alt="B110"    class="belso em1 tanari"    title="B110 Műszaki iroda">
+                    <img src="map/belso/belso/1em/em1_0023_B110_2.png"          id="B110-2"       alt="B110.2"    class="belso em1 tanari"    title="B110.2 Igazgató helyettesi iroda">
+                    <img src="map/belso/belso/1em/em1_0024_B111.png"            id="B111"       alt="B111"    class="belso em1 tanari"    title="B111 tanári dolgozó">
+                    <img src="map/belso/belso/1em/em1_0027_B121.png"            id="C121"      alt="C121"    class="belso em1 tanari"    title="C121 tanári">
+                    <img src="map/belso/belso/1em/em1_0028_C119.png"            id="C1ffi"      alt="C1ffi"    class="belso em1 ffi wc"    title="Férfi WC">
+                    <img src="map/belso/belso/1em/em1_0029_tanári_wc_2.png"     id="C1tanari"       alt="C tanári wc"    class="belso em1 tanari wc"    title="Tanári WC">
+                    <img src="map/belso/belso/1em/em1_0030_C118.png"            id="C118"           alt="C118"    class="belso em1 tanari"    title="C118 tanári">
+                    <img src="map/belso/belso/1em/em1_0031_C117.png"            id="C117"           alt="C117"    class="belso em1 terem"    title="C117">
+                    <img src="map/belso/belso/1em/em1_0032_C116.png"            id="C116"           alt="C116"    class="belso em1 terem"    title="C116">
+                    <img src="map/belso/belso/1em/em1_0033_C115.png"            id="C115"           alt="C115"    class="belso em1 terem"    title="C115 Elektro tanműhely">
+                    <img src="map/belso/belso/1em/em1_0034_C114.png"            id="C114"           alt="C114"    class="belso em1 tanari"    title="C114 tanári">
+                    <img src="map/belso/belso/1em/em1_0035_C113.png"            id="C113"           alt="C113"    class="belso em1 terem"    title="C113">
+                    <img src="map/belso/belso/1em/em1_0036_C112.png"            id="C112"           alt="C112"    class="belso em1 terem"    title="C112">
+                </div>
+                <div id="fsz" style="display: none;">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0044_fsz.png"             id="fsza"       alt="Földszint"  class="belso fsz alap"    title="Földszint">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0011_Porta.png"           id="porta"         alt="porta"        class="belso fsz"    title="Porta">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0009_fsz_folyosó_1.png"   id="fszfoly1"   alt="Folyosó"    class="belso fsz folyoso"    title="A épület folyosó">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0030_fsz_folyosó_2.png"   id="fszfoly2"   alt="Folyosó"    class="belso fsz folyoso"    title="B épület folyosó">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0043_fsz_folyosó_3.png"   id="fszfoly3"   alt="Folyosó"    class="belso fsz folyoso"    title="C épület folyosó">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0000_tterem.png"          id="A10"        alt="A10"        class="belso fsz tesi terem"    title="Tornaterem">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0001_A4.png"              id="A4"         alt="A4"         class="belso fsz tesi szertar"    title="A4 Tesi szertár">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0002_ffi_wc_1em_1.png"    id="A0ffi"      alt="A0ffi"      class="belso fsz ffi wc"    title="Férfi WC">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0003_A6.png"              id="A6"         alt="A6"        class="belso fsz tesi noi oltozo"    title="Női öltöző">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0004_A7.png"              id="A7"         alt="A7"        class="belso fsz tesi szertar"    title="Szertár">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0005_A8.png"              id="A8"         alt="A8"        class="belso fsz tesi tanari"    title="A8 tanári">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0006_A9.png"              id="A9"         alt="A9"         class="belso fsz tesi terem"    title="A9 konditerem">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0007_A3.png"              id="A3"      alt="A3"           class="belso fsz tesi ffi oltozo"    title="Férfi öltöző">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0008_A2.png"              id="A2"         alt="A2"        class="belso fsz tesi ffi oltozo"    title="Férfi öltöző">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0010_Al_fsz.png"          id="Alfsz"         alt="Alfsz"        class="belso fsz lepcso"    title="A lépcső">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0012_ffi_wc_2.png"        id="B0ffi"         alt="B0ffi"         class="belso fsz ffi wc"    title="Férfi WC">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0013_B11_1.png"           id="B11-1"      alt="B11.1"           class="belso fsz oltozo"    title="Takarítói öltöző">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0014_B11.png"             id="B11"         alt="B11"        class="belso fsz"    title="Gondnoki iroda">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0015_B12_1.png"           id="B12-1"         alt="B12.1"        class="belso fsz titkarsag"    title="Gazdasági iroda">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0016_B12.png"             id="B12"         alt="B12"        class="belso fsz terem"    title="B12">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0017_B30.png"             id="B30"         alt="B30"         class="belso fsz tanari"    title="B30">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0018_B29.png"             id="B29"      alt="B29"           class="belso fsz szertar tanari"    title="B29 tanári">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0019_B28.png"             id="B28"         alt="B28"        class="belso fsz terem"    title="B28">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0020_B27.png"             id="B27"         alt="B27"        class="belso fsz terem"    title="B27">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0021_B26.png"             id="B26"         alt="B26"        class="belso fsz irattar"    title="B26 irattár">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0022_B13.png"             id="B13"         alt="B13"         class="belso fsz terem"    title="B13">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0023_B14.png"             id="B14"      alt="B14"           class="belso fsz terem"    title="B14">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0024_noi_wc_fsz_1.png"    id="B0noi"         alt="B0noi"        class="belso fsz noi wc"    title="Női WC">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0028_ebedlo.png"          id="ebedloal"      alt="ebedlo"           class="belso fsz ebedlo"    title="Ebédlő">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0025_D3.png"              id="D3"         alt="D3"        class="belso fsz ebedlo tanari"    title="D3 stúdió">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0026_konyha.png"          id="konyha"         alt="konyha"        class="belso fsz ebedlo"    title="Konyha">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0027_bufe.png"            id="bufe"         alt="Bufe"         class="belso fsz ebedlo"    title="Büfé">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0029_Bl_fsz.png"          id="Blfsz"         alt="Blfsz"        class="belso fsz lepcso"    title="B lépcső">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0031_Cl_fsz.png"          id="Clfsz"         alt="Clfsz"        class="belso fsz lepcso"    title="C lépcső">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0032_terasz.png"          id="teraszal"         alt="terasz"        class="belso fsz terasz"    title="Terasz">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0033_C25.png"             id="C25"         alt="C25"        class="belso fsz tanari"    title="C25 tanári">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0034_tanari_wc_1.png"     id="C0tanari"         alt="C0tanari"         class="belso fsz tanari wc"    title="Tanári WC">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0035_regi_porta.png"      id="rPorta"         alt="regiporta"        class="belso fsz"    title="Régi porta">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0036_C22.png"             id="C22"         alt="C22"        class="belso fsz terem"    title="C22 Technikusi terem">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0037_C21.png"             id="C21"         alt="C21"        class="belso fsz tanari"    title="C21 tanári">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0038_C20.png"             id="C20"         alt="C20"        class="belso fsz terem"    title="C20">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0039_C19.png"             id="C19"         alt="C19"        class="belso fsz terem"             title="C19">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0040_C16.png"             id="C16"         alt="C16"        class="belso fsz terem"    title="C16">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0041_C17.png"             id="C17"         alt="C17"        class="belso fsz terem"    title="C17">
+                    <img src="map/belso/belso/fsz/foldszint_0000s_0042_C18.png"             id="C18"         alt="C18"        class="belso fsz"    title="C18 gázmérő">
+                </div>
             </div>
         </div>
     </body>
