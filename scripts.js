@@ -67,6 +67,12 @@ function iframeLoaded(){
             $("#szint", parent.document).attr("value", "fsz")
             $("#szint", parent.document).text("Földszint")
         }
+        else if($("#szint", parent.document).attr("value") === "fsz"){
+            $("#fsz").hide()
+            $("#alag").css("display", "")
+            $("#szint", parent.document).attr("value", "alag")
+            $("#szint", parent.document).text("Alagsor")
+        }
     })
     $("#fel", parent.document).bind("click", function(){
         if($("#szint", parent.document).attr("value") === "div"){
@@ -98,6 +104,12 @@ function iframeLoaded(){
             $("#fsz").hide()
             $("#szint", parent.document).attr("value", "em1")
             $("#szint", parent.document).text("1. emelet")
+        }
+        else if($("#szint", parent.document).attr("value") === "alag"){
+            $("#fsz").css("display", "")
+            $("#alag").hide()
+            $("#szint", parent.document).attr("value", "fsz")
+            $("#szint", parent.document).text("Földszint")
         }
     })
 
@@ -189,6 +201,30 @@ function iframeLoaded(){
         $("#kivalasztott", parent.document).text("-")
         $("#kivalasztott").css("opacity", "0")
         $("#info", parent.document).text("")
+    })
+    $(".belso")
+    .click(function(){
+        if($("#map2").hasClass("selectedmap")){
+            $("#map2").removeClass("selectedmap")
+            $("#map2").attr("src", "map/sat/egressy_map.png")
+            $("#map2").css("left", "9px")
+            $("#map2").css("top", "8px")
+        }
+        if(!$(this).hasClass("selected")){
+            galChange($(this))
+            $(".selected").removeClass("selected")
+            $(this).addClass("selected")
+            $("#kivalasztott", parent.document).text($(this).attr("title"))
+            $("#kivalasztott", parent.document).css("opacity", "1")
+            $("#info", parent.document).text("")
+        }
+        else{
+            galChange($("#map2"))
+            $(".selected").removeClass("selected")
+            $("#kivalasztott", parent.document).text("-")
+            $("#kivalasztott", parent.document).css("opacity", "0")
+            $("#info", parent.document).text("")
+        }
     })
 
 }
