@@ -232,8 +232,173 @@ function iframeLoaded(){
 
 function pageLoaded(){
 
-    /*JSON-ban adatkereső függvény*/
 
+    $("#teremipt")
+    .focus(function(){
+        if($("#teremipt").val().length < 1){
+            
+            $("#teremList div").remove()
+            var keresettTerem = []
+            $("#mapframe").contents().find(".belso").each(function(){
+                if($(this).attr("title").toLowerCase().includes($("#teremipt", parent.document).val().toLowerCase())){
+                    keresettTerem.push($(this).attr("title"))
+                }
+            })
+            keresettTerem.forEach(function(element){
+                $("#teremList").append(`<div class="teremclick row">${element}</div>`)
+            })
+            $("#teremList").css("display", "")
+
+        }
+
+    })
+    .focusout(function(){
+        $("#teremList").hide()
+    })
+    .bind("keyup", function(){
+        $("#teremList div").remove()
+        var keresettTerem = []
+        $("#mapframe").contents().find(".belso").each(function(){
+            if($(this).attr("title").toLowerCase().includes($("#teremipt", parent.document).val().toLowerCase())){
+                keresettTerem.push($(this).attr("title"))
+            }
+        })
+        keresettTerem.forEach(function(element){
+            $("#teremList").append(`<div class="teremclick row">${element}</div>`)
+        })
+        if($("#teremipt").val().length < 1){
+            
+
+            $("#teremList").css("display", "")
+
+        }
+        $(".teremclick").click(function(){
+            
+        })
+    })
+    
+
+    var unusedTags = ["WC", "Női", "Férfi", "Tanári", "Öltöző", "Szertár", "Ebédlő", "Terem", "Folyosó", "Lépcső", "Labor", "Könyvtár", "Orvosi", "Műhely", "Irattár", "Titkárság"]
+
+
+    for(var i in unusedTags){
+        $("#tagek").append(`<span class="tags col-6">${unusedTags[i]}</span>`)
+    }
+    $(".tags").bind("click", ontagclick)
+
+    function ontagclick(){
+        if($('#tagek').has($(this)).length){
+            $("#tagek").remove($(this))
+            $("#selectedtags").append($(this))
+        }
+        else{
+            $("#selectedtags").remove($(this))
+            $("#tagek").append($(this))
+        }
+    }
+
+    $("#tagipt")
+    .click(function(){
+        if($("#tagek").css("display") == "none"){
+            $("#tagek").css("display", "")
+        }
+        else{
+            $("#tagek").css("display", "none")
+        }
+        
+    })
+
+    .bind("keyup", function(){
+        $(".tags").each(function(){
+            if(!$(this).text().toLowerCase().includes($("#tagipt").val().toLowerCase())){
+                $(this).hide()
+            }
+            else{
+                $(this).css("display", "")
+            }
+        })
+        $(".tags").bind("click", ontagclick)
+    })
+    $(document).mouseup(function(e) 
+    {
+        var container = $("#ipttag");
+        
+        if (!container.is(e.target) && container.has(e.target).length === 0) 
+        {
+            $("#tagek").hide();
+        }
+    })
+    
+    $("#kereses").click(function(){
+        var keresett = []
+        $("#kivalasztott").text("")
+        $("#selectedtags span").each(function(){
+            $("#kivalasztott").text($("#kivalasztott").text() + " " + $(this).text())
+            $("#kivalasztott").css("opacity", "1")
+            switch($(this).text()){
+                case "WC":
+                    keresett.push("wc")
+                    break;
+                case "Tanári":
+                    keresett.push("tanari")
+                    break;
+                case "Női":
+                    keresett.push("noi")
+                    break;
+                case "Férfi":
+                    keresett.push("ffi")
+                    break;
+                case "Öltöző":
+                    keresett.push("oltozo")
+                    break;
+                case "Szertár":
+                    keresett.push("szertar")
+                    break;
+                case "Ebédlő":
+                    keresett.push("ebedlo")
+                    break;
+                case "Terem":
+                    keresett.push("terem")
+                    break;
+                case "Folyosó":
+                    keresett.push("folyoso")
+                    break;
+                case "Lépcső":
+                    keresett.push("lepcso")
+                    break;
+                case "Könyvtár":
+                    keresett.push("konyvtar")
+                    break;
+                case "Orvosi":
+                    keresett.push("orvosi")
+                    break;
+                case "Műhely":
+                    keresett.push("muhely")
+                    break;
+                case "Irattár":
+                    keresett.push("irattar")
+                    break;
+                case "Titkárság":
+                    keresett.push("titkarsag")
+                    break;
+            }
+        })
+        if(keresett.length > 0){
+            var search = ""
+            for(var i in keresett){
+                var search = search + "." + keresett[i]
+            }
+            $("#mapframe").contents().find(search).addClass("selected")
+            if($("#mapframe").contents().find(".selected").length < 1){
+                $("#kivalasztott").text("Nincs a keresésnek megfelelő elem")
+            }
+        }
+        else{
+            $("#mapframe").contents().find(".selected").removeClass("selected")
+            $("#kivalasztott").text("-")
+            $("#kivalasztott").css("opacity", "0")
+        }
+    })
 
     
 

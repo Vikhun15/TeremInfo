@@ -26,6 +26,30 @@
             </header>
         <main class="m-auto">
             <h4 class="text-center pt-5">Egressy Gábor Technikum</h4><br>
+            <div id="kereso" class="row">
+                <div class="col-md-4 col-0"></div>
+                <div id="ipttxt" class="col">
+                    <label for="teremipt">Keresett rész:</label>
+                    <input type="text" name="teremipt" id="teremipt">
+                    <div id="teremList" class="row" style="display:none;">
+
+                    </div>
+                </div>
+                <div id="ipttag" class="col">
+                    <label for="tagipt">Kiválasztott tagek:</label>
+                    <input type="text" name="tag" id="tagipt"><div id="selectedtags"></div></input>
+                    <div id="tagek" class="row" style="display:none;">
+
+                    </div>
+                </div>
+                <div class="col-md-4 col">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <button class="col" type="button" id="kereses" >Keresés</button>
+                <div class="col"></div>
+            </div>
             <div class="row p-4 pt-1">
                 <div class="col-lg-3 p-0 col-md-12 row pt-3">
                     <div class="row col-lg-12 col-md-6" id="navi">
@@ -111,3 +135,5 @@
         
     </body>
 </html>
+
+<!--TODO: footer + A3 + keresőmező + stilus-->

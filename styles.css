@@ -38,6 +38,54 @@ main{
     border-radius: 20px;
 }
 
+
+#teremList{
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 0px;
+    overflow: auto;
+}
+
+#tagek{
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+    min-width: 100%;
+}
+
+#selectedtags{
+    position: relative;
+    float: left;
+    left: 0px;
+    top: -25px;
+    max-width: 180px;
+    overflow:auto;
+}
+
+
+.tags{
+    font-size: 15px;
+    cursor: pointer;
+    background-color: white;
+    border: solid black 1px;
+    border-radius: 40px;
+    max-height: 20px;
+    max-width: 90px!important;
+    color: black;
+    padding-left: 5px;
+    padding-right: 10px;
+    max-width: auto;
+    padding-top: 0;
+}
+
+#kereses{
+    max-width: 180px;
+}
+
 .nav{
     max-width: 40px;
     filter: brightness(0.8);
@@ -208,7 +256,7 @@ main{
     padding-top: 5%;
     padding-bottom: 5%;
     left:50%;
-    top: 90%;
+    top: 110%;
     transform: translate(-50%, -50%);
     background-color: rgba(0,0,0,0.9);
     border-radius: 40px;
