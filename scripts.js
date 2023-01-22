@@ -79,7 +79,7 @@ function iframeLoaded(){
             $("#map2").css("display", "")
             $("#epuletek").hide()
             $("#szint", parent.document).attr("value", "sat")
-            $("#szint", parent.document).text("Szatellit")
+            $("#szint", parent.document).text("Műhold")
         }
         else if($("#szint", parent.document).attr("value") === "em3"){
             $("#epuletek").css("display", "")
@@ -278,7 +278,7 @@ function pageLoaded(){
     })
     
 
-    var unusedTags = ["WC", "Női", "Férfi", "Tanári", "Öltöző", "Szertár", "Ebédlő", "Terem", "Folyosó", "Lépcső", "Labor", "Könyvtár", "Orvosi", "Műhely", "Irattár", "Titkárság"]
+    var unusedTags = ["WC", "Tanári", "Öltöző", "Szertár", "Ebédlő", "Terem", "Folyosó", "Lépcső", "Labor", "Könyvtár", "Orvosi", "Műhely", "Irattár", "Titkárság"]
 
 
     for(var i in unusedTags){
@@ -290,22 +290,79 @@ function pageLoaded(){
         if($('#tagek').has($(this)).length){
             $("#tagek").remove($(this))
             $("#selectedtags").append($(this))
+            if($(this).text() == "WC"){
+                $("#oltozor").css("display", "none")
+                $("#wcr").css("display", "")
+                $("#ifwc").css("display", "none")
+            }
+            else if($(this).text() == "Öltöző"){
+                $("#wcr").css("display", "none")
+                $("#oltozor").css("display", "")
+                $("#ifwc").css("display", "none")
+            }
+            else if($(this).text() == "Tanári"){
+                $("#wcr").css("display", "none")
+                $("#oltozor").css("display", "none")
+                $("#ifwc").css("display", "")
+            }
+            else{
+                $("#wcr").css("display", "none")
+                $("#oltozor").css("display", "none")
+                $("#ifwc").css("display", "none")
+            }
         }
         else{
             $("#selectedtags").remove($(this))
             $("#tagek").append($(this))
         }
+
+        if($("#selectedtags").has($(this)).length < 1){
+            $("#wcr").css("display", "none")
+            $("#oltozor").css("display", "none")
+            $("#ifwc").css("display", "none")
+        }
+
     }
+
 
     $("#tagipt")
     .click(function(){
-        if($("#tagek").css("display") == "none"){
-            $("#tagek").css("display", "")
-        }
-        else{
+        if($("#tagek").css("display") === "block"){
             $("#tagek").css("display", "none")
         }
-        
+        else{
+            $("#tagek").css("display", "")
+        }
+    })
+    .focusout(function(){
+        $("#tagek").css("display", "none")
+    })
+    .hover(function(){
+        $("#menugomb").css("background-color", "rgb(220,220,220")
+    }, function(){
+        $("#menugomb").css("background-color", "rgb(200,200,200")
+    })
+
+    $("#menugomb")
+    .click(function(){
+        if($("#tagek").css("display") === "block"){
+            $("#tagek").css("display", "none")
+        }
+        else{
+            $("#tagek").css("display", "")
+        }
+    })
+    .focusout(function(){
+        $("#tagek").css("display", "none")
+    })
+    .hover(function(){
+        $("#menugomb").css("background-color", "rgb(220,220,220")
+    }, function(){
+        $("#menugomb").css("background-color", "rgb(200,200,200")
+    })
+
+    $("#tagek").click(function(){
+        $(this).css("display", "none")
     })
 
     .bind("keyup", function(){

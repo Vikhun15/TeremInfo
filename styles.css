@@ -22,19 +22,18 @@
 #cim{
     font-size: 4rem;
     text-align: center;
-    background-color: grey;
+    /*background-color: grey;*/
     max-width: 1000px;
-    color:white;
+    color:black;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 }
 
 main{
-    max-width: 1280px;
-    background-color: green;
+    background-color: white;
     background-size: cover;
     text-align: center;
-    color: white;
+    color: black;
     border-radius: 20px;
 }
 
@@ -44,26 +43,76 @@ main{
     background-color: white;
     padding: 10px;
     border: 2px solid black;
-    min-width: 100%;
+    width: 32%;
     max-height: 200px;
     min-height: 0px;
-    overflow: auto;
+    overflow:auto;
+    position: absolute;
+    z-index: 1;
 }
+
+#menugomb{
+    cursor: pointer;
+    float: left;
+    position: relative;
+    right: 0;
+    top:-30px;
+    left: 94%;
+    background-color: rgb(200,200,200);
+    color: white;
+    width: 5%;
+    height: 30px;
+    font-size:2.5vh;
+    border: 1px solid rgb(118, 118, 118);
+}
+
+
 
 #tagek{
     background-color: white;
     padding: 10px;
+    width: 32%;
     border: 2px solid black;
-    min-width: 100%;
+    overflow: auto;
+    position: absolute;
+    overflow: auto;
+    z-index: 1;
+}
+
+#tagipt{
+    border: 1px solid rgb(118, 118, 118);
+    min-height: 29.2px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    height: 30px;
 }
 
 #selectedtags{
     position: relative;
+    left: 5px;
     float: left;
-    left: 0px;
-    top: -25px;
-    max-width: 180px;
-    overflow:auto;
+    margin-top: 5px;
+    max-width: 312px;
+    overflow:hidden;
+}
+
+#extrajell{
+    position: absolute;
+}
+
+
+#ipttag{
+    padding: 0;
+}
+
+#ipttag input{
+    width: 90%;
+}
+
+#ipttxt input{
+    width: 90%;
 }
 
 
@@ -80,10 +129,18 @@ main{
     padding-right: 10px;
     max-width: auto;
     padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
 }
 
 #kereses{
-    max-width: 180px;
+    height: 70%;
+    width: 70%;
+    transform: translateY(20%);
+    color: white;
+    background-color: green;
+    border-radius:1.2rem;
+    padding: 0;
 }
 
 .nav{
@@ -95,23 +152,20 @@ main{
     filter: brightness(1.5);
 }
 
-#navi{
-    font-size: 1.2em;
-}
 
 #kivcont{
     font-size: 1rem;
 }
 
 #embed{
-    background-color: green;
+    background-color: white;
     max-width: 100%;
     margin: auto;
 }
 
 #info{
     text-align: left;
-    min-height: 300px;
+    min-height: 150px;
 }
 
 #kivalasztott{
@@ -123,12 +177,13 @@ main{
     display: block;
     height: 100vh;
     width: 100%;
-    border: none;
     background-color: rgba(0,0,0,0.0);
 }
 
 #map{
-    position: relative;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #map1{
@@ -184,7 +239,7 @@ main{
 /*Galléria*/
 
 #gallery{
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.9);
     border-radius: 20px;
     margin: 5%;
     margin-top: 0;
@@ -195,6 +250,7 @@ main{
 
 
 .handle{
+    color: white;
     display: inline;
     padding-top:    90px;
     padding-bottom: 90px;
