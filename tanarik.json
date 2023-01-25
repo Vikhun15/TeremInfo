@@ -1,0 +1,201 @@
+[
+    {
+        "terem":"C300",
+        "epulet":"C",
+        "tanarok":[
+            "Pap-Mednyánszki Jusztina",
+            "Bazsóné Hablik Bernadett"
+        ]
+    },
+    {
+        "terem":"C302",
+        "epulet":"C",
+        "tanarok":[
+            "Stephen Schuit",
+            "Guginé Kovács Réka"
+        ]
+    },
+    {
+        "terem":"C305",
+        "epulet":"C",
+        "tanarok":[
+            "Babarczyné Kovács Judit",
+            "Csoboth Zita",
+            "Dr. Somló Katalin",
+            "Gosztola Réka",
+            "Kiss István",
+            "Mórász Balázs",
+            "Schmieder Mónika",
+            "Szabó-Szalai Szilvia"
+        ]
+    },
+    {
+        "terem":"C306",
+        "epulet":"C",
+        "tanarok":[
+            "Babarczyné Kovács Judit",
+            "Csoboth Zita",
+            "Dr. Somló Katalin",
+            "Gosztola Réka",
+            "Kiss István",
+            "Mórász Balázs",
+            "Schmieder Mónika",
+            "Szabó-Szalai Szilvia"
+        ]
+    },
+    {
+        "terem":"C307",
+        "epulet":"C",
+        "tanarok":[
+            "Babarczyné Kovács Judit",
+            "Csoboth Zita",
+            "Dr. Somló Katalin",
+            "Gosztola Réka",
+            "Kiss István",
+            "Mórász Balázs",
+            "Schmieder Mónika",
+            "Szabó-Szalai Szilvia"
+        ]
+    },
+    {
+        "terem":"A201",
+        "epulet":"A",
+        "tanarok":[
+            "Horváth Kovács Antónia"
+        ]
+    },
+    {
+        "terem":"B209",
+        "epulet":"B",
+        "tanarok":[
+            "Berhidi Éva",
+            "Kisné Rácz Erzsébet"
+        ]
+    },
+    {
+        "terem":"B212",
+        "epulet":"B",
+        "tanarok":[
+            "Göbölösné Czank Ildikó"
+        ]
+    },
+    {
+        "terem":"C222",
+        "epulet":"C",
+        "tanarok":[
+            "Göbölösné Czank Ildikó"
+        ]
+    },
+    {
+        "terem":"A101",
+        "epulet":"A",
+        "tanarok":[
+            "Simon Gabriella",
+            "Gyúró Imre",
+            "Martis Zsombor"
+        ]
+    },
+    {
+        "terem":"B108-1",
+        "epulet":"B",
+        "tanarok":[
+            "Szalayné Kelemen Ildikó"
+        ]
+    },
+    {
+        "terem":"B109-1",
+        "epulet":"B",
+        "tanarok":[
+            "Kajdy Adrienn"
+        ]
+    },
+    {
+        "terem":"B110-1",
+        "epulet":"B",
+        "tanarok":[
+            "Golgovszki Ilona"
+        ]
+    },
+    {
+        "terem":"B110-2",
+        "epulet":"B",
+        "tanarok":[
+            "Csiki Attila"
+        ]
+    },
+    {
+        "terem":"B111",
+        "epulet":"B",
+        "tanarok":[
+            "Foldvári Eszter",
+            "Fürstingerné Juhász Márta",
+            "Holánszkiné Kövesdi Zsuzsanna",
+            "Stelmachné Fekete Ildikó"
+        ]
+    },
+    {
+        "terem":"C121",
+        "epulet":"C",
+        "tanarok":[
+            "Beke Ágnes",
+            "Dencsi Dezső",
+            "Tóthné Tózsa Judit",
+            "Szigeti Ottó"
+        ]
+    },
+    {
+        "terem":"C114",
+        "epulet":"C",
+        "tanarok":[
+            "Bereczki zsolt"
+        ]
+    },
+    {
+        "terem":"C118",
+        "epulet":"C",
+        "tanarok":[
+            "Bereczki zsolt"
+        ]
+    },
+    {
+        "terem":"A8",
+        "epulet":"A",
+        "tanarok":[
+            "Széles István",
+            "Eterrer Vilmos",
+            "Trembulyák Zoltán",
+            "Répás Béla",
+            "Hajdú Ádám"
+        ]
+    },
+    {
+        "terem":"B29",
+        "epulet":"B",
+        "tanarok":[
+            "Bányai Adalbert"
+        ]
+    },
+    {
+        "terem":"C21",
+        "epulet":"C",
+        "tanarok":[
+            "Rivnyák Ferenc",
+            "Bartha Lajos Attila"
+        ]
+    },
+    {
+        "terem":"C25",
+        "epulet":"C",
+        "tanarok":[
+            "Szathmári József",
+            "Mészáros Tibor"
+        ]
+    },
+    {
+        "terem":"D3",
+        "epulet":"ebedlo",
+        "tanarok":[
+            "Makai Tamás"
+        ]
+    }
+]

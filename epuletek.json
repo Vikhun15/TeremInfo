@@ -1,7 +1,7 @@
-epuletekJSON = [
+[
     {
         "epulet":"A",
-        "text":"Lorem Ipsumqfqffgwgwgwgwegwegwg",
+        "text":"Az iskola harmadik épülete. 1984-ben épült fel, a korszakhoz méltóan panelekből. Ennek az épületnek a tetején található az iskola napelemjeinek nagyobb része. Ebben az épületben találhatóak a sport szakos osztályok, illetve a tornaterembe is innen nyílik az átjáró.",
         "termek":[
             "A2","A3","A4","A8","A9",
             "A101", "A102", "A103", "A104", "A105", "A106", "A107",
@@ -18,7 +18,7 @@ epuletekJSON = [
     },
     {
         "epulet":"B",
-        "text":"Az 'A' és 'B' épületeket összekötő lépcsősor",
+        "text":"Az iskola legöregebb épülete, itt található az úgynevezett 'adminisztrációs folyosó' ahol az iskola összes adminisztrációs feladata öszpontosul. Innen nyílik az ébédlő is. A termeket tekintve ezt az épületet tekinthetjük a leg változatosabbnak ugyanis itt találhatóak informatika, matematika, kémia, fizika és masszőr termek is.",
         "termek":[
             "B23", "B24", "B25",
             "B12", "B13", "B14",
@@ -36,7 +36,7 @@ epuletekJSON = [
     },
     {
         "epulet":"C",
-        "text":"Az 'B' épületen belüli lépcsősor",
+        "text":"Az iskola második legöregebb épülete, ha a tetőtért nem számoljuk. 1965-ben épült, elsődlegesen a műszaki termek és laborok találhatóak meg itt. A harmadik emelet csak később épült rá, ide költöztek a nyelvi előkészítős (nyek-es) osztályok és az idegennyelvi tanárok is.",
         "termek":[
             "C016", "C22", "C20", "C19", "C17", "C16",
             "C112", "C113", "C115", "C116", "C117",
@@ -53,21 +53,21 @@ epuletekJSON = [
     },
     {
         "epulet":"terasz",
-        "text":"A 'B' és a 'C' épületeket összekötő lépcsősor",
+        "text":"A C lépcsősorból nyíló kültéri emelvény",
         "termek":[
             null
         ]
     },
     {
         "epulet":"tterem",
-        "text":"A 'B' és a 'C' épületeket összekötő lépcsősor",
+        "text":"Az iskola tornaterme, 1984-ben épült az 'A' épülettel együtt. Ez az elsődleges testnevelésre alkalmas területe az iskolának, az órerendben ezt jelzi a 'T1', míg a 'T2' az iskola udvara.",
         "termek":[
             "A10"
         ]
     },
     {
         "epulet":"ebedlo",
-        "text":"A 'B' és a 'C' épületeket összekötő lépcsősor",
+        "text":"Az iskola ebédlője, 1984-ben épült az 'A' épülettel és a tornateremmel együtt. Itt található az oktatástechnikai stúdió, mely Makai Tamás tanár úr tanáriaként/műhelyeként szolgál. Itt található továbbá az iskola büféje, a konyha és a színpad, emly az évek során sok előadásnak adott helyet.",
         "termek":[
             "D3"
         ]

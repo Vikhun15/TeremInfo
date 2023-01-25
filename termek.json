@@ -1,16 +1,325 @@
-termek = [
+[
     {
-        "terem":"B226",
-        "epulet":"B",
+        "terem":"C301",
+        "epulet":"C",
         "projektor":true,
-        "orarend":"link",
-        "extra":"11.K osztályterme"
+        "orarend":43,
+        "extra":"Nyelvi szaktanterem"
+    },
+    {
+        "terem":"C303",
+        "epulet":"C",
+        "projektor":true,
+        "orarend":44,
+        "extra":"9.K osztályterme"
     },
     {
         "terem":"C304",
         "epulet":"C",
+        "projektor":true,
+        "orarend":45,
+        "extra":"10.K osztályterme"
+    },
+    {
+        "terem":"C308",
+        "epulet":"C",
+        "projektor":true,
+        "orarend":46,
+        "extra":"9.Kny osztályterme"
+    },
+    {
+        "terem":"C312",
+        "epulet":"C",
         "projektor":false,
-        "orarend":"link",
-        "extra":"9.K osztályterme"
+        "orarend":null,
+        "extra":"Idegen nyelvi könyvtár"
+    },
+    {
+        "terem":"A202",
+        "epulet":"A",
+        "projektor":true,
+        "orarend":7,
+        "extra":"Katonai szaktanterem"
+    },
+    {
+        "terem":"A203",
+        "epulet":"A",
+        "projektor":false,
+        "orarend":8,
+        "extra":"11.S osztályterme"
+    },
+    {
+        "terem":"A204",
+        "epulet":"A",
+        "projektor":false,
+        "orarend":9,
+        "extra":null
+    },
+    {
+        "terem":"A205",
+        "epulet":"A",
+        "projektor":false,
+        "orarend":10,
+        "extra":"9.S osztályterme"
+    },
+    {
+        "terem":"A206",
+        "epulet":"A",
+        "projektor":false,
+        "orarend":11,
+        "extra":"10.I osztályterme"
+    },
+    {
+        "terem":"B208",
+        "epulet":"B",
+        "projektor":true,
+        "orarend":19,
+        "extra":"Kémia szaktanterem"
+    },
+    {
+        "terem":"B210",
+        "epulet":"B",
+        "projektor":false,
+        "orarend":20,
+        "extra":"Nyelvi szaktanterem"
+    },
+    {
+        "terem":"B211",
+        "epulet":"B",
+        "projektor":false,
+        "orarend":21,
+        "extra":"11.I osztályterme"
+    },
+    {
+        "terem":"B224",
+        "epulet":"B",
+        "projektor":false,
+        "orarend":22,
+        "extra":"12.A osztályterme"
+    },
+    {
+        "terem":"B225",
+        "epulet":"B",
+        "projektor":true,
+        "orarend":23,
+        "extra":"Informatikai szaktanterem"
+    },
+    {
+        "terem":"B226",
+        "epulet":"B",
+        "projektor":true,
+        "orarend":24,
+        "extra":"11.K osztályterme"
+    },
+    {
+        "terem":"B227",
+        "epulet":"B",
+        "projektor":true,
+        "orarend":25,
+        "extra":"Német szaktanterem"
+    },
+    {
+        "terem":"C213",
+        "epulet":"C",
+        "projektor":true,
+        "orarend":37,
+        "extra":"Informatikai szaktanterem"
+    },
+    {
+        "terem":"C214",
+        "epulet":"C",
+        "projektor":true,
+        "orarend":38,
+        "extra":"Informatikai szaktanterem"
+    },
+    {
+        "terem":"C216",
+        "epulet":"C",
+        "projektor":true,
+        "orarend":39,
+        "extra":"FESTO labor, műhely"
+    },
+    {
+        "terem":"C217",
+        "epulet":"C",
+        "projektor":false,
+        "orarend":40,
+        "extra":"Nyelvi szaktanterem"
+    },
+    {
+        "terem":"C218",
+        "epulet":"C",
+        "projektor":true,
+        "orarend":41,
+        "extra":"12.K osztályterme"
+    },
+    {
+        "terem":"C219",
+        "epulet":"C",
+        "projektor":false,
+        "orarend":42,
+        "extra":"Nyelvi szaktanterem"
+    },
+    {
+        "terem":"A102",
+        "epulet":"A",
+        "projektor":false,
+        "orarend":1,
+        "extra":null
+    },
+    {
+        "terem":"A103",
+        "epulet":"A",
+        "projektor":true,
+        "orarend":2,
+        "extra":"Történelem szaktanterem"
+    },
+    {
+        "terem":"A104",
+        "epulet":"A",
+        "projektor":false,
+        "orarend":3,
+        "extra":"10.S osztyálterme"
+    },
+    {
+        "terem":"A105",
+        "epulet":"A",
+        "projektor":false,
+        "orarend":4,
+        "extra":null
+    },
+    {
+        "terem":"A106",
+        "epulet":"A",
+        "projektor":false,
+        "orarend":5,
+        "extra":"12.C osztályterme"
+    },
+    {
+        "terem":"A107",
+        "epulet":"A",
+        "projektor":false,
+        "orarend":6,
+        "extra":"9.I osztályterme"
+    },
+    {
+        "terem":"C112",
+        "epulet":"C",
+        "projektor":true,
+        "orarend":32,
+        "extra":"Informatika szaktanterem"
+    },
+    {
+        "terem":"C113",
+        "epulet":"C",
+        "projektor":true,
+        "orarend":33,
+        "extra":"Informatika szaktanterem"
+    },
+    {
+        "terem":"C115",
+        "epulet":"C",
+        "projektor":true,
+        "orarend":34,
+        "extra":"Elektrotechnika műhely"
+    },
+    {
+        "terem":"C116",
+        "epulet":"C",
+        "projektor":true,
+        "orarend":35,
+        "extra":"Informatika szaktanterem"
+    },
+    {
+        "terem":"C117",
+        "epulet":"C",
+        "projektor":true,
+        "orarend":36,
+        "extra":"Elektrotechnika műhely"
+    },
+    {
+        "terem":"B12",
+        "epulet":"B",
+        "projektor":true,
+        "orarend":13,
+        "extra":"Matematika szaktanterem"
+    },
+    {
+        "terem":"B13",
+        "epulet":"B",
+        "projektor":false,
+        "orarend":14,
+        "extra":"10.E osztályterme"
+    },
+    {
+        "terem":"B023",
+        "epulet":"B",
+        "projektor":true,
+        "orarend":15,
+        "extra":"13.E/S osztályterme"
+    },
+    {
+        "terem":"B27",
+        "epulet":"B",
+        "projektor":false,
+        "orarend":16,
+        "extra":"Masszőr szaktanterem"
+    },
+    {
+        "terem":"B28",
+        "epulet":"B",
+        "projektor":true,
+        "orarend":17,
+        "extra":"Fizika szaktanterem"
+    },
+    {
+        "terem":"B30",
+        "epulet":"B",
+        "projektor":true,
+        "orarend":18,
+        "extra":"Elektrotechnikai szaktanterem"
+    },
+    {
+        "terem":"C16",
+        "epulet":"C",
+        "projektor":true,
+        "orarend":26,
+        "extra":"Informatika szaktanterem"
+    },
+    {
+        "terem":"C016",
+        "epulet":"C",
+        "projektor":false,
+        "orarend":27,
+        "extra":"Vegyes forgácsoló műhely"
+    },
+    {
+        "terem":"C17",
+        "epulet":"C",
+        "projektor":true,
+        "orarend":28,
+        "extra":"Informatika szaktanterem"
+    },
+    {
+        "terem":"C19",
+        "epulet":"C",
+        "projektor":true,
+        "orarend":29,
+        "extra":"Informatika szaktanterem"
+    },
+    {
+        "terem":"C20",
+        "epulet":"C",
+        "projektor":true,
+        "orarend":30,
+        "extra":"Informatika szaktanterem"
+    },
+    {
+        "terem":"C22",
+        "epulet":"C",
+        "projektor":true,
+        "orarend":31,
+        "extra":"13.I osztályterme"
     }
+    
 ]
