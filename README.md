@@ -55,3 +55,6 @@ __Legendi Márton__, Egressy Gábor Technikum szakértő, mint aktív Egressy-s 
 __Makai Tamás__, Egressy Gábor Technikum szakértő, segítséget nyújtott az Egressy térképnek megszerzésében.
 
 __Nagy-Szabó Viktória__, UI/UX Grafikus dizájner, a végső kinézetben és elrendezésben nyújtott segítséget.
+
+
+[`GitHub link`](https://github.com/Vikhun15/TeremInfo)
