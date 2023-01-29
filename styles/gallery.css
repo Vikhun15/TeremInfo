@@ -1,0 +1,174 @@
+/**
+*   gallery.css
+*
+*   Itt találhatóak a főoldalon megjelenő kép galléria formázásai.
+*   Csak az index.html-hez van hozzá kapcsolva. 
+*/
+
+#gallery{
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 20px;
+    margin: 5%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+
+.handle{
+    color: #ffffff;
+    display: inline;
+    padding-top:    90px;
+    padding-bottom: 90px;
+    padding-right:  10px;
+    padding-left:   10px;
+    position: relative;
+    top: -113px;
+    height: 80px;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+#galjobb{
+    left: 43%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#galbal{
+    right: 43%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/*
+    A kep a kis méretű kép, a kep2 a kiemelt, nagy méretű
+*/
+
+.kep{
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-height: 100px;
+    height: auto;
+    width: 200px;
+    display: inline-block;
+    float: none;
+    background-color: #000000;
+    border: 2px #000000 solid;
+}
+
+.kep:hover{
+    cursor: pointer;
+    border: 4px rgba(200, 255, 0, 1);
+}
+
+
+.kep2{
+    position: fixed;
+    min-width: 1000px;
+    height: auto;
+    width:  100%;
+    float: none;
+    border: 2px #000000 solid;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 40px;
+}
+
+.kep2:hover{
+    cursor: pointer;
+}
+
+.galhid{
+    display: none;
+}
+
+/*
+    A gallériában található képek.
+*/
+
+#alap01{
+    background-image: url("../gallery/alap/01.png");
+}
+#alap02{
+    background-image: url("../gallery/alap/02.jpg");
+}
+#alap03{
+    background-image: url("../gallery/alap/03.jpg");
+}
+#alap04{
+    background-image: url("../gallery/alap/04.jpg");
+}
+#alap05{
+    background-image: url("../gallery/alap/05.jpg");
+}
+#alap06{
+    background-image: url("../gallery/alap/06.jpeg");
+}
+#alap07{
+    background-image: url("../gallery/alap/07.jpg");
+}
+
+/*A épület képek*/
+#A01{
+    background-image: url("../gallery/A/01.jpg");
+}
+#A02{
+    background-image: url("../gallery/A/02.jpg");
+}
+#A03{
+    background-image: url("../gallery/A/03.jpg");
+}
+
+/*A lépcső képek*/
+#Al01{
+    background-image: url("../gallery/Al/01.jpg");
+}
+
+/*B épület képek*/
+#B01{
+    background-image: url("../gallery/B/01.jpg");
+}
+#B02{
+    background-image: url("../gallery/B/02.jpg");
+}
+#B03{
+    background-image: url("../gallery/B/03.jpg");
+}
+
+
+/*C épület képek*/
+#C01{
+    background-image: url("../gallery/C/01.jpg");
+}
+#C02{
+    background-image: url("../gallery/C/02.jpg");
+}
+#C03{
+    background-image: url("../gallery/C/03.jpg");
+}
+
+/*C lépcső képek*/
+#Cl01{
+    background-image: url("../gallery/Cl/01.jpg");
+}
+#Cl02{
+    background-image: url("../gallery/Cl/02.jpg");
+}
+
+/*Tornaterem képek*/
+#tterem01{
+    background-image: url("../gallery/tterem/01.jpg");
+}
+#tterem02{
+    background-image: url("../gallery/tterem/02.jpg");
+}

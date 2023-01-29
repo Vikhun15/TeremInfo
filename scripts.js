@@ -1,29 +1,40 @@
 
-fetch('./epuletek.json')
+/*
+*   Összesen három darab JSON fájlban van tárolva az információ
+*
+*   epuletek.json
+*   Ez tartalmazza az iskola épületeinek a leírását és hogy melyikben milyen termek találhatóak.
+*
+*   termek.json
+*   Ez tartalmazza a termeket, hogy van-e bennük projektor, az órarend pdf-ben a teremre hivatkozó oldal számát
+*   és a terem extra információit mint például hogy kinek az osztályterme és ha szaktanterem.
+*
+*   tanarik.json
+*   Ez tartalmazza a tanárikat és bennük található tanárok neveit. 
+*
+*/
+
+fetch('./JSON/epuletek.json')
     .then((response) => response.json())
     .then((json) => epuletek = json);
 
-fetch('./termek.json')
+fetch('./JSON/termek.json')
     .then((response) => response.json())
     .then((json) => termek = json);
 
-fetch('./tanarik.json')
+fetch('./JSON/tanarik.json')
     .then((response) => response.json())
     .then((json) => tanarik = json);
 
 
-$("#mapframe").on("load" ,function(){
-    $("#fel").bind("click", function(){
-        if($("#szint").attr("value") === "sat"){
-            $("#map2").hide()
-        }
-    })
-})
 
+//Egy gyors függvény a beágyazott lap maximum méreteinek beállítására
 
 function resizeIframe(that){
     that.style.height=(that.contentWindow.document.body.scrollHeight+20)+'px';
 }
+
+//A galléria tartalmainak változtató függvénye
 
 function galChange(that){
     $(".galdiv", parent.document).addClass("galhid")
@@ -46,103 +57,124 @@ function galChange(that){
     }
 }
 
-function iframeLoaded(){
-    var isktxt = "Az Egressy Gábor Gimnáziumot 1956-ban alapította a XIV kerület városi tanácsa a növekvő diáklétszám taníttatására. Kezdetben még a szomszédos (napjainkban Herman Ottó) általános iskolához tartozott mint fiúgimnázium. Az iskola 1964-ben megváltoztatta a nevét, hogy jobban reflektálja a műszaki irányt. Az iskola neve 'Egyressy Gábor Gimnázium és Ipari szakközépiskola' lett. Az évek során a kezdetben csak a mai 'B' épületből álló iskola kibővült. Megépültek az 'A' és 'C' épületek, az iskola új ebédlőt és tornatermet kapott. 2004-ben az iskolában új képzés alakult, Két tanítási nyelvű osztályok indultak szeptembertől. Következő nagy fejlődés 2012-ben történt mikor az országban elsőként honvéd kadét program indult az iskolában. Napjainkban már az iskola a jól ismert 'Egressy Gábor Két Tanítási nyelvű Technikum' néven fut tovább, minden évben közel 40 szakemberrel gazdagítva a magyar gazdaságot."
-    $("#le", parent.document).bind("click", function(){
-        if($("#szint", parent.document).attr("value") === "sat"){
-            $("#map2").hide()
-            $("#epuletek").css("display", "")
-            $("#szint", parent.document).attr("value", "div")
-            $("#szint", parent.document).text("Épületek")
+//A szint váltáshoz használt függvény, a kettő bementi paramétere a mostani szint és az irány.
 
+function szintValtas(currlv,dir){
+
+    var lvl = ""
+    $("#map2").hide()
+    $("#epuletek").hide()
+    $("#belso div").hide()
+    if(dir == "le"){
+        switch (currlv){
+            case "sat":
+                $("#szint", parent.document).attr("value", "div")
+                $("#szint", parent.document).text("Épületek")
+                lvl = "#epuletek"
+                break;
+            case "div":
+                $("#szint", parent.document).attr("value", "em3")
+                $("#szint", parent.document).text("3. emelet")
+                lvl = "#em3"
+                break;
+            case "em3":
+                $("#szint", parent.document).attr("value", "em2")
+                $("#szint", parent.document).text("2. emelet")
+                lvl = "#em2"
+                break;
+            case "em2":
+                $("#szint", parent.document).attr("value", "em1")
+                $("#szint", parent.document).text("1. emelet")
+                lvl = "#em1"
+                break;
+            case "em1":
+                $("#szint", parent.document).attr("value", "fsz")
+                $("#szint", parent.document).text("Földszint")
+                lvl = "#fsz"
+                break;
+            case "fsz":
+                $("#szint", parent.document).attr("value", "alag")
+                $("#szint", parent.document).text("Alagsor")
+                lvl = "#alag"
+                break;
+            default:
+                lvl = "#alag"
         }
-        else if($("#szint", parent.document).attr("value") === "div"){
-            $("#epuletek").hide()
-            $("#em3").css("display", "")
-            $("#szint", parent.document).attr("value", "em3")
-            $("#szint", parent.document).text("3. emelet")
+    }
+    else{
+        switch (currlv){
+            case "div":
+                $("#szint", parent.document).attr("value", "sat")
+                $("#szint", parent.document).text("Műhold")
+                lvl = "#map2"
+                break;
+            case "em3":
+                $("#szint", parent.document).attr("value", "div")
+                $("#szint", parent.document).text("Épületek")
+                lvl = "#epuletek"
+                break;
+            case "em2":
+                $("#szint", parent.document).attr("value", "em3")
+                $("#szint", parent.document).text("3. emelet")
+                lvl = "#em3"
+                break;
+            case "em1":
+                $("#szint", parent.document).attr("value", "em2")
+                $("#szint", parent.document).text("2. emelet")
+                lvl = "#em2"
+                break;
+            case "fsz":
+                $("#szint", parent.document).attr("value", "em1")
+                $("#szint", parent.document).text("1. emelet")
+                lvl = "#em1"
+                break;
+            case "alag":
+                $("#szint", parent.document).attr("value", "fsz")
+                $("#szint", parent.document).text("Földszint")
+                lvl = "#fsz"
+                break;
+            default:
+                lvl = "#map2"
         }
-        else if($("#szint", parent.document).attr("value") === "em3"){
-            $("#em3").hide()
-            $("#em2").css("display", "")
-            $("#szint", parent.document).attr("value", "em2")
-            $("#szint", parent.document).text("2. emelet")
-        }
-        else if($("#szint", parent.document).attr("value") === "em2"){
-            $("#em2").hide()
-            $("#em1").css("display", "")
-            $("#szint", parent.document).attr("value", "em1")
-            $("#szint", parent.document).text("1. emelet")
-        }
-        else if($("#szint", parent.document).attr("value") === "em1"){
-            $("#em1").hide()
-            $("#fsz").css("display", "")
-            $("#szint", parent.document).attr("value", "fsz")
-            $("#szint", parent.document).text("Földszint")
-        }
-        else if($("#szint", parent.document).attr("value") === "fsz"){
-            $("#fsz").hide()
-            $("#alag").css("display", "")
-            $("#szint", parent.document).attr("value", "alag")
-            $("#szint", parent.document).text("Alagsor")
-        }
+    }
+
+    $(lvl).css("display", "")
+}
+
+//A beágyazott oldal betöltésekor lefutó kódok
+
+function iframeLoaded(){
+
+    //Térképen belüli emelet navigációs parancsok
+    
+    $("#le", parent.document).bind("click", function(){
+        szintValtas($("#szint", parent.document).attr("value"), $(this).attr("id"))
     })
     $("#fel", parent.document).bind("click", function(){
-        if($("#szint", parent.document).attr("value") === "div"){
-            $("#map2").css("display", "")
-            $("#epuletek").hide()
-            $("#szint", parent.document).attr("value", "sat")
-            $("#szint", parent.document).text("Műhold")
-        }
-        else if($("#szint", parent.document).attr("value") === "em3"){
-            $("#epuletek").css("display", "")
-            $("#em3").hide()
-            $("#szint", parent.document).attr("value", "div")
-            $("#szint", parent.document).text("Épületek")
-        }
-        else if($("#szint", parent.document).attr("value") === "em2"){
-            $("#em3").css("display", "")
-            $("#em2").hide()
-            $("#szint", parent.document).attr("value", "em3")
-            $("#szint", parent.document).text("3. emelet")
-        }
-        else if($("#szint", parent.document).attr("value") === "em1"){
-            $("#em2").css("display", "")
-            $("#em1").hide()
-            $("#szint", parent.document).attr("value", "em2")
-            $("#szint", parent.document).text("2. emelet")
-        }
-        else if($("#szint", parent.document).attr("value") === "fsz"){
-            $("#em1").css("display", "")
-            $("#fsz").hide()
-            $("#szint", parent.document).attr("value", "em1")
-            $("#szint", parent.document).text("1. emelet")
-        }
-        else if($("#szint", parent.document).attr("value") === "alag"){
-            $("#fsz").css("display", "")
-            $("#alag").hide()
-            $("#szint", parent.document).attr("value", "fsz")
-            $("#szint", parent.document).text("Földszint")
-        }
+        szintValtas($("#szint", parent.document).attr("value"), $(this).attr("id"))
     })
+
+    
+    //Az iskola épületének leírása
+    const isktxt = "Az Egressy Gábor Gimnáziumot 1956-ban alapította a XIV kerület városi tanácsa a növekvő diáklétszám taníttatására. Kezdetben még a szomszédos (napjainkban Herman Ottó) általános iskolához tartozott mint fiúgimnázium. Az iskola 1964-ben megváltoztatta a nevét, hogy jobban reflektálja a műszaki irányt. Az iskola neve 'Egyressy Gábor Gimnázium és Ipari szakközépiskola' lett. Az évek során a kezdetben csak a mai 'B' épületből álló iskola kibővült. Megépültek az 'A' és 'C' épületek, az iskola új ebédlőt és tornatermet kapott. 2004-ben az iskolában új képzés alakult, Két tanítási nyelvű osztályok indultak szeptembertől. Következő nagy fejlődés 2012-ben történt mikor az országban elsőként honvéd kadét program indult az iskolában. Napjainkban már az iskola a jól ismert 'Egressy Gábor Két Tanítási nyelvű Technikum' néven fut tovább, minden évben közel 40 szakemberrel gazdagítva a magyar gazdaságot."
 
 
     //A szatellit térkép egér utasításai
-
+    
 
     $("#map2")
     .hover( function(){
-        $(this).attr("src", "map/sat/egressy_map_hover.png")
+        $(this).attr("src", "../map/sat/egressy_map_hover.png")
         $(this).css("left", "9px")
         $(this).css("top", "8px")
     }, function(){
         if(!$(this).hasClass("selectedmap")){
-            $(this).attr("src", "map/sat/egressy_map.png")
+            $(this).attr("src", "../map/sat/egressy_map.png")
             $(this).css("left", "9px")
             $(this).css("top", "8px")
         }
         else{
-            $(this).attr("src", "map/sat/egressy_map_click.png")
+            $(this).attr("src", "../map/sat/egressy_map_click.png")
         }
     })
     .click(function(){
@@ -272,10 +304,11 @@ function iframeLoaded(){
 
 }
 
+//A főoldal betöltésekor lefutó kódok
 
 function pageLoaded(){
 
-    
+    //A kereső mezőkhöz tartozó Listenerek
 
     $("#teremipt")
     .focus(function(){
@@ -333,7 +366,7 @@ function pageLoaded(){
     })
     
     
-    
+    //Az összes lehetséges (és logikus) tag
 
     var unusedTags = ["WC", "Tanári", "Öltöző", "Szertár", "Ebédlő", "Terem", "Folyosó", "Lépcső", "Labor", "Könyvtár", "Orvosi", "Műhely", "Irattár", "Titkárság"]
 
@@ -372,6 +405,7 @@ function pageLoaded(){
 
     }
 
+    //A kereső mezők beviteli részeinek utasításai
 
     $("#tagipt")
     .click(function(){
@@ -437,6 +471,7 @@ function pageLoaded(){
     $("#kereses").click(function(){
         var keresett = []
         $("#kivalasztott").text("")
+        $("#info").text("")
         $("#mapframe").contents().find(".selected").removeClass("selected")
         $("#selectedtags span").each(function(){
             $("#kivalasztott").text($("#kivalasztott").text() + ", " + $(this).text())
@@ -661,7 +696,7 @@ function pageLoaded(){
         }
     })
 
-    
+    //Galléria jobb és balra navigáció
 
     var pos = $(".kep").eq(0).position()["left"] - 210
     $("#galjobb").bind("click", function(){
@@ -680,6 +715,8 @@ function pageLoaded(){
             $(".kep").animate({left: pos}, 500)
         }
     })
+
+    //Kép "nagyítás"
 
     $(".kep").bind("click", function(){
         $("#nKep").remove()

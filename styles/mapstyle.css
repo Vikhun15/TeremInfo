@@ -1,3 +1,11 @@
+/**
+*   mapstyles.css
+*
+*   Ez a fájl tartalmazza a térkép összes elemének az elhelyezését.
+*   Csak a map.html-hez van hozzá kapcsolva.
+*/
+
+
 
 /*Alrészek*/
 #tterem{
@@ -643,7 +651,7 @@
     left: 305px;
 }
 #B26r{
-    top: 138px;
+    top: 139px;
     left: 305px;
 }
 #Banoi{
@@ -696,7 +704,7 @@
 }
 #afoly1{
     top: 206px;
-    left: 305px;
+    left: 318px;
 }
 #Clalag{
     top: 138px;
