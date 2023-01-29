@@ -45,8 +45,9 @@ A weboldal kódjának a vizuális dokumentációsja megtalálható a "dokumentá
 Az alábbi személyek a segítségükkel és tanácsaikkal hozzájárultak az oldal végleges finomításához.
 
 __Blaskó Máté__, Üzemmérnök informatikus, tanácsot adott a dokumentáció irásában.
+
 __Ónodi-Kiss Lili__, Mérnökinformatikus hallgató, mint volt Egressy-s diák tesztelte a weblapomat.
 __Madács Marcell__, IBM hálózati szakértő, tanácsot adott a weboldal méreteiben és nyújtózkodásában.
-__Legendi Márton__, Egressy Gábor Technikum szakértő, mint akítv Egressy-s diák tesztelte a weblapomat.
+__Legendi Márton__, Egressy Gábor Technikum szakértő, mint aktív Egressy-s diák tesztelte a weblapomat.
 __Makai Tamás__, Egressy Gábor Technikum szakértő, segítséget nyújtott az Egressy térképnek megszerzésében.
 __Nagy-Szabó Viktória__, UI/UX Grafikus dizájner, a végső kinézetben és elrendezésben nyújtott segítséget.
