@@ -23,8 +23,7 @@ A munka közben több akadályba is belefutottam, így a kezdetben saccolt ~2 h�
 * Az iskola rövid történelme
 * Terem kereső
   * Név alapján
-  * "Tag"-ek alapján 
-  
+  * "Tag"-ek alapján
 #### Futtatás:
 A weboldal futtatásához szükséges egy szerver futtatása a kettő oldal közötti kommunikáció miatt.
 
@@ -38,23 +37,6 @@ A weboldal futtatásához szükséges egy szerver futtatása a kettő oldal köz
 
 #### Fejlesztőknek:
 A weboldal kódjának a vizuális dokumentációsja megtalálható a "dokumentáció" mappában. Ezen kívül az átláthatóság kedvéért kommentekkel láttam el a CSS fájlokat illetve a scripts.js fájlt.
-
-
-#### Segítőim:
-
-Az alábbi személyek a segítségükkel és tanácsaikkal hozzájárultak az oldal végleges finomításához.
-
-__Blaskó Máté__, Üzemmérnök informatikus, tanácsot adott a dokumentáció irásában.
-
-__Ónodi-Kiss Lili__, Mérnökinformatikus hallgató, mint volt Egressy-s diák tesztelte a weblapomat.
-
-__Madács Marcell__, IBM hálózati szakértő, tanácsot adott a weboldal méreteiben és nyújtózkodásában.
-
-__Legendi Márton__, Egressy Gábor Technikum szakértő, mint aktív Egressy-s diák tesztelte a weblapomat.
-
-__Makai Tamás__, Egressy Gábor Technikum szakértő, segítséget nyújtott az Egressy térképnek megszerzésében.
-
-__Nagy-Szabó Viktória__, UI/UX Grafikus dizájner, a végső kinézetben és elrendezésben nyújtott segítséget.
 
 
 [`GitHub link`](https://github.com/Vikhun15/TeremInfo)
