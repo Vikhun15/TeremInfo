@@ -143,6 +143,8 @@ function szintValtas(currlv,dir){
 
 //A beágyazott oldal betöltésekor lefutó kódok
 
+
+
 function iframeLoaded(){
 
     //Térképen belüli emelet navigációs parancsok
