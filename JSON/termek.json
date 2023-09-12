@@ -11,21 +11,21 @@
         "epulet":"C",
         "projektor":true,
         "orarend":44,
-        "extra":"9.K osztályterme"
+        "extra":"10.K osztályterme"
     },
     {
         "terem":"C304",
         "epulet":"C",
         "projektor":true,
         "orarend":45,
-        "extra":"10.K osztályterme"
+        "extra":"11.K osztályterme"
     },
     {
         "terem":"C308",
         "epulet":"C",
         "projektor":true,
         "orarend":46,
-        "extra":"9.Kny osztályterme"
+        "extra":"9.K osztályterme"
     },
     {
         "terem":"C312",
@@ -46,7 +46,7 @@
         "epulet":"A",
         "projektor":false,
         "orarend":8,
-        "extra":"11.S osztályterme"
+        "extra":"12.S osztályterme"
     },
     {
         "terem":"A204",
@@ -60,14 +60,14 @@
         "epulet":"A",
         "projektor":false,
         "orarend":10,
-        "extra":"9.S osztályterme"
+        "extra":"10.S osztályterme"
     },
     {
         "terem":"A206",
         "epulet":"A",
         "projektor":false,
         "orarend":11,
-        "extra":"10.I osztályterme"
+        "extra":"11.I osztályterme"
     },
     {
         "terem":"B208",
@@ -88,14 +88,14 @@
         "epulet":"B",
         "projektor":false,
         "orarend":21,
-        "extra":"11.I osztályterme"
+        "extra":"12.I osztályterme"
     },
     {
         "terem":"B224",
         "epulet":"B",
         "projektor":false,
         "orarend":22,
-        "extra":"12.A osztályterme"
+        "extra":"9.I osztályterme"
     },
     {
         "terem":"B225",
@@ -109,7 +109,7 @@
         "epulet":"B",
         "projektor":true,
         "orarend":24,
-        "extra":"11.K osztályterme"
+        "extra":"12.K osztályterme"
     },
     {
         "terem":"B227",
@@ -151,7 +151,7 @@
         "epulet":"C",
         "projektor":true,
         "orarend":41,
-        "extra":"12.K osztályterme"
+        "extra":"9.Kny osztályterme"
     },
     {
         "terem":"C219",
@@ -179,7 +179,7 @@
         "epulet":"A",
         "projektor":false,
         "orarend":3,
-        "extra":"10.S osztyálterme"
+        "extra":"11.S osztyálterme"
     },
     {
         "terem":"A105",
@@ -193,14 +193,14 @@
         "epulet":"A",
         "projektor":false,
         "orarend":5,
-        "extra":"12.C osztályterme"
+        "extra":"10.S osztályterme"
     },
     {
         "terem":"A107",
         "epulet":"A",
         "projektor":false,
         "orarend":6,
-        "extra":"9.I osztályterme"
+        "extra":"10.I osztályterme"
     },
     {
         "terem":"C112",
@@ -249,14 +249,14 @@
         "epulet":"B",
         "projektor":false,
         "orarend":14,
-        "extra":"10.E osztályterme"
+        "extra":"11.E osztályterme"
     },
     {
         "terem":"B023",
         "epulet":"B",
         "projektor":true,
         "orarend":15,
-        "extra":"13.E/S osztályterme"
+        "extra":"Technikusi terem"
     },
     {
         "terem":"B27",
@@ -319,7 +319,7 @@
         "epulet":"C",
         "projektor":true,
         "orarend":31,
-        "extra":"13.I osztályterme"
+        "extra":"2/14.I osztályterme"
     }
     
 ]

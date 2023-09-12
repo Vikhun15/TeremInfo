@@ -14,6 +14,7 @@
                 pageLoaded()
             })
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         <script type="application/JSON" src="JSON/epuletek.json"></script>
         <script type="application/JSON" src="JSON/termek.json"></script>
         <script type="application/JSON" src="JSON/tanarik.json"></script>
@@ -87,55 +88,219 @@
                     ></iframe>
                 </div>
             </div>
-            <div id="galnagy" class="">
-                <div id="gallery" class="p-5">
-                    <div id="alap" class="galdiv">
-                        <div class="kep mx-2" id="alap01"></div>
-                        <div class="kep mx-2" id="alap02"></div>
-                        <div class="kep mx-2" id="alap03"></div>
-                        <div class="kep mx-2" id="alap04"></div>
-                        <div class="kep mx-2" id="alap05"></div>
-                        <div class="kep mx-2" id="alap06"></div>
-                        <div class="kep mx-2" id="alap07"></div>
+            <div id="gallery" class="carousel slide" data-bs-ride="carousel">
+                <div id="alap" class="galdiv">
+                    <div id="indicators" class="carousel-indicators">
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="6" aria-label="Slide 7"></button>
                     </div>
-                    <div id="gal_A" class="galhid galdiv">
-                        <div class="kep mx-2" id="A01"></div>
-                        <div class="kep mx-2" id="A02"></div>
-                        <div class="kep mx-2" id="A03"></div>
-                    </div>
-                    <div id="gal_Al" class="galhid galdiv">
-                        <div class="kep mx-2" id="Al01"></div>
-                    </div>
-                    <div id="gal_B" class="galhid galdiv">
-                        <div class="kep mx-2" id="B01"></div>
-                        <div class="kep mx-2" id="B02"></div>
-                        <div class="kep mx-2" id="B03"></div>
-                    </div>
-                    <div id="gal_Bl" class="galhid galdiv">
-                        <div class="kep mx-2" id="Bl01"></div>
-                    </div>
-                    <div id="gal_C" class="galhid galdiv">
-                        <div class="kep mx-2" id="C01"></div>
-                        <div class="kep mx-2" id="C02"></div>
-                        <div class="kep mx-2" id="C03"></div>
-                    </div>
-                    <div id="gal_Cl" class="galhid galdiv">
-                        <div class="kep mx-2" id="Cl01"></div>
-                        <div class="kep mx-2" id="Cl02"></div>
-                    </div>
-                    <div id="gal_tterem" class="galhid galdiv">
-                        <div class="kep mx-2" id="tterem01"></div>
-                        <div class="kep mx-2" id="tterem02"></div>
-                    </div>
-                    <div id="gal_terasz" class="galhid galdiv">
-                        <div class="kep mx-2" id="terasz01"></div>
-                    </div>
-                    <div id="gal_ebedlo" class="galhid galdiv">
-                        <div class="kep mx-2" id="ebedlo01"></div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item galcal active">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/alap/01.png" class="kep d-block w-100 mx-2" alt="" id="alap01">
+                        </div>
+                      </div>
+                      <div class="carousel-item galcal">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/alap/02.jpg" class="kep d-block w-100 mx-2" alt="" id="alap02">
+                        </div>
+                      </div>
+                      <div class="carousel-item galcal">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/alap/03.jpg" class="kep d-block w-100 mx-2" alt="" id="alap03">
+                        </div>
+                      </div>
+                      <div class="carousel-item galcal">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/alap/04.jpg" class="kep d-block w-100 mx-2" alt="" id="alap04">
+                        </div>
+                      </div>
+                      <div class="carousel-item galcal">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/alap/05.jpg" class="kep d-block w-100 mx-2" alt="" id="alap05">
+                        </div>
+                      </div>
+                      <div class="carousel-item galcal">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/alap/06.jpeg" class="kep d-block w-100 mx-2" alt="" id="alap06">
+                        </div>
+                      </div>
+                      <div class="carousel-item galcal">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/alap/07.jpg" class="kep d-block w-100 mx-2" alt="" id="alap07">
+                        </div>
+                      </div>
                     </div>
                 </div>
-                <div id="galbal" class="handle">&lt;</div>
-                <div id="galjobb" class="handle">&gt;</div>
+                <div id="gal_A" class="galdiv galhid">
+                    <div id="indicators" class="carousel-indicators">
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item galcal active">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/A/01.jpg" class="kep d-block w-100 mx-2" alt="" id="A01">
+                        </div>
+                      </div>
+                      <div class="carousel-item galcal">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/A/02.jpg" class="kep d-block w-100 mx-2" alt="" id="A02">
+                        </div>
+                      </div>
+                      <div class="carousel-item galcal">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/A/03.jpg" class="kep d-block w-100 mx-2" alt="" id="A03">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div id="gal_A1" class="galdiv galhid">
+                    <div id="indicators" class="carousel-indicators">
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item galcal active">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/Al/01.jpg" class="kep d-block w-100 mx-2" alt="" id="Al01">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div id="gal_B" class="galdiv galhid">
+                    <div id="indicators" class="carousel-indicators">
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item galcal active">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/B/01.jpg" class="kep d-block w-100 mx-2" alt="" id="B01">
+                        </div>
+                      </div>
+                      <div class="carousel-item galcal">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/B/02.jpg" class="kep d-block w-100 mx-2" alt="" id="B02">
+                        </div>
+                      </div>
+                      <div class="carousel-item galcal">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/B/03.jpg" class="kep d-block w-100 mx-2" alt="" id="B03">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div id="gal_B1" class="galdiv galhid">
+                    <div id="indicators" class="carousel-indicators">
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item galcal active">
+                        <!--Nothing yet-->
+                        <div class="d-flex justify-content-center">
+                            <img src="" class="kep d-block w-100 mx-2" alt="" id="Bl01">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div id="gal_C" class="galdiv galhid">
+                    <div id="indicators" class="carousel-indicators">
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item galcal active">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/C/01.jpg" class="kep d-block w-100 mx-2" alt="" id="C01">
+                        </div>
+                      </div>
+                      <div class="carousel-item galcal">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/C/02.jpg" class="kep d-block w-100 mx-2" alt="" id="C02">
+                        </div>
+                      </div>
+                      <div class="carousel-item galcal">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/C/03.jpg" class="kep d-block w-100 mx-2" alt="" id="C03">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div id="gal_C1" class="galdiv galhid">
+                    <div id="indicators" class="carousel-indicators">
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item galcal active">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/Cl/01.jpg" class="kep d-block w-100 mx-2" alt="" id="Cl01">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/Cl/02.jpg" class="kep d-block w-100 mx-2" alt="" id="Cl02">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div id="gal_tterem" class="galdiv galhid">
+                    <div id="indicators" class="carousel-indicators">
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item galcal active">
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/tterem/01.jpg" class="kep d-block w-100 mx-2" alt="" id="tterem01">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <img src="../gallery/tterem/02.jpg" class="kep d-block w-100 mx-2" alt="" id="tterem02">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div id="gal_terasz" class="galdiv galhid">
+                    <div id="indicators" class="carousel-indicators">
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item galcal active">
+                        <!--Nothing yet-->
+                        <div class="d-flex justify-content-center">
+                            <img src="" class="kep d-block w-100 mx-2" alt="" id="terasz01">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div id="gal_ebedlo" class="galdiv galhid">
+                    <div id="indicators" class="carousel-indicators">
+                      <button type="button" data-bs-target="#gallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item galcal active">
+                        <!--Nothing yet-->
+                        <div class="d-flex justify-content-center">
+                            <img src="" class="kep d-block w-100 mx-2" alt="" id="ebedlo01">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#gallery" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#gallery" data-bs-slide="next">
+                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Next</span>
+                </button>
             </div>
             <br>
         </main>

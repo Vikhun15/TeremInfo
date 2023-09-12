@@ -48,14 +48,11 @@
 
 .kep{
     position: relative;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    min-height: 100px;
-    height: auto;
-    width: 200px;
     display: inline-block;
-    float: none;
+    max-width:400px;
+    max-height:400px;
+    width: auto;
+    object-fit: cover;
     background-color: #000000;
     border: 2px #000000 solid;
 }
@@ -90,85 +87,4 @@
 
 .galhid{
     display: none;
-}
-
-/*
-    A gallériában található képek.
-*/
-
-#alap01{
-    background-image: url("../gallery/alap/01.png");
-}
-#alap02{
-    background-image: url("../gallery/alap/02.jpg");
-}
-#alap03{
-    background-image: url("../gallery/alap/03.jpg");
-}
-#alap04{
-    background-image: url("../gallery/alap/04.jpg");
-}
-#alap05{
-    background-image: url("../gallery/alap/05.jpg");
-}
-#alap06{
-    background-image: url("../gallery/alap/06.jpeg");
-}
-#alap07{
-    background-image: url("../gallery/alap/07.jpg");
-}
-
-/*A épület képek*/
-#A01{
-    background-image: url("../gallery/A/01.jpg");
-}
-#A02{
-    background-image: url("../gallery/A/02.jpg");
-}
-#A03{
-    background-image: url("../gallery/A/03.jpg");
-}
-
-/*A lépcső képek*/
-#Al01{
-    background-image: url("../gallery/Al/01.jpg");
-}
-
-/*B épület képek*/
-#B01{
-    background-image: url("../gallery/B/01.jpg");
-}
-#B02{
-    background-image: url("../gallery/B/02.jpg");
-}
-#B03{
-    background-image: url("../gallery/B/03.jpg");
-}
-
-
-/*C épület képek*/
-#C01{
-    background-image: url("../gallery/C/01.jpg");
-}
-#C02{
-    background-image: url("../gallery/C/02.jpg");
-}
-#C03{
-    background-image: url("../gallery/C/03.jpg");
-}
-
-/*C lépcső képek*/
-#Cl01{
-    background-image: url("../gallery/Cl/01.jpg");
-}
-#Cl02{
-    background-image: url("../gallery/Cl/02.jpg");
-}
-
-/*Tornaterem képek*/
-#tterem01{
-    background-image: url("../gallery/tterem/01.jpg");
-}
-#tterem02{
-    background-image: url("../gallery/tterem/02.jpg");
 }

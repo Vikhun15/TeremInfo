@@ -45,8 +45,19 @@ function galChange(that){
             found = true;
         }
     })
+    
+    $(".galcal", parent.document).each(function(){
+        $(this).removeClass("carousel-item")
+        if($(this).parent().parent().attr("id").split("_")[1] == that.attr("id")){
+            $(this).addClass("carousel-item")
+        }
+    })
+
     if(!found){
         $("#alap", parent.document).removeClass("galhid")
+        $("#alap .carousel-inner .galcal", parent.document).each(function(){
+            $(this).addClass("carousel-item")
+        })
     }
     $(".kep", parent.document).animate({left: "0"}, 500)
     if(($(".kep", parent.document).length - $(".galhid", parent.document).children(".kep").length) <= 4){
